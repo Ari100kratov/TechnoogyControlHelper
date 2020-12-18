@@ -56,7 +56,7 @@ namespace TestIzm.Bl
                 {
                     Id = group.Key,
                     Name = this.Machine.ParameterList.FirstOrDefault(p => p.Id == group.Key)?.Name ?? group.Key.ToString(),
-                    List = group.Value
+                    SignalList = group.Value
                 };
 
                 rowXList.Add(rowX);
@@ -85,11 +85,11 @@ namespace TestIzm.Bl
                         };
 
                         var fromIndex = rowXIndexes[rowIndex];
-                        int to = rowX.List.Count;
+                        int to = rowX.SignalList.Count;
 
-                        for (int i = fromIndex; i < rowX.List.Count; i++)
+                        for (int i = fromIndex; i < rowX.SignalList.Count; i++)
                         {
-                            if (rowX.List[i].Datetime >= up.DtStart)
+                            if (rowX.SignalList[i].Datetime >= up.DtStart)
                             {
                                 to = i > 0 ? (i - 1) : 0;
                                 rowXIndexes[rowIndex] = i;
@@ -97,7 +97,7 @@ namespace TestIzm.Bl
                             }
                         }
 
-                        newRowX.List = rowX.List.Skip(fromIndex).Take(to - fromIndex).ToList();
+                        newRowX.SignalList = rowX.SignalList.Skip(fromIndex).Take(to - fromIndex).ToList();
 
                         analisisRowXList.Add(newRowX);
                     }

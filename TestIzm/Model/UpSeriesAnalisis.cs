@@ -150,7 +150,7 @@ namespace TestIzm.Model
                 if (thisRow == null)
                     continue;
 
-                thisRow.List.AddRange(row.List);
+                thisRow.SignalList.AddRange(row.SignalList);
             }
 
             this.UpModelList.AddRange(nextAnalisist.UpModelList);
@@ -241,23 +241,23 @@ namespace TestIzm.Model
                     };
 
                     var fromIndex = rowXIndexes[rowIndex];
-                    var to = rowX.List.Count;
+                    var to = rowX.SignalList.Count;
 
-                    for (int i = fromIndex; i < rowX.List.Count; i++)
+                    for (int i = fromIndex; i < rowX.SignalList.Count; i++)
                     {
-                        if (rowX.List[i].Datetime <= upModel.Up.DtStart)
+                        if (rowX.SignalList[i].Datetime <= upModel.Up.DtStart)
                         {
                             fromIndex = i;
                         }
 
-                        if (rowX.List[i].Datetime > upModel.Up.DtEnd)
+                        if (rowX.SignalList[i].Datetime > upModel.Up.DtEnd)
                         {
                             rowXIndexes[rowIndex] = i;
                             to = i;
                             break;
                         }
                     }
-                    newRowX.List = rowX.List.Skip(fromIndex).Take(to - fromIndex).ToList();
+                    newRowX.SignalList = rowX.SignalList.Skip(fromIndex).Take(to - fromIndex).ToList();
 
                     upModel.Data.Add(newRowX);
                 }

@@ -8,22 +8,21 @@ namespace WindowsFormsApp1
     public class RowX
     {
         public int Id { get; set; }
+        public int MachineParamId { get; set; }
 
         public string Name { get; set; }
 
-        public List<AdditionalSignalRepository.AdditionalSignalRow> List { get; set; }
+        public List<AdditionalSignalRepository.AdditionalSignalRow> SignalList { get; set; }
 
-        public override string ToString()
-        {
-            return Name + " " + List.Count;
-        }
+        public string NameWithCount => $"{this.Name}{(this.SignalList is null || this.SignalList.Count() == 0 ? string.Empty : this.SignalList.Count.ToString())}";
 
         internal RowX Clone()
         {
             var row = new RowX();
             row.Id = this.Id;
+            row.MachineParamId = this.MachineParamId;
             row.Name = this.Name;
-            row.List = this.List.ToList();
+            row.SignalList = this.SignalList.ToList();
 
             return row;
         }

@@ -1,22 +1,13 @@
 ﻿using DevExpress.XtraCharts;
-using DevExpress.XtraCharts.Native;
-using DevExpress.XtraExport.Implementation;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Globalization;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 using TestIzm;
 using TestIzm.Bl;
 using TestIzm.Model;
-using TestIzm.Model.Db;
 using static TestIzm.AdditionalSignalRepository;
 
 namespace WindowsFormsApp1
@@ -33,43 +24,528 @@ namespace WindowsFormsApp1
         public ConstantLine UCLWarningline { get; private set; }
         public ConstantLine LCLWarningline { get; private set; }
 
+        private MachineModel _selectedMachine => this.lueMachine.GetSelectedDataRow() as MachineModel;
+        private RowX _selectedFirstMachineParam => this.lueFirstMachineParam.GetSelectedDataRow() as RowX;
+        private RowX _selectedSecondMachineParam => this.lueSecondMachineParam.GetSelectedDataRow() as RowX;
+        private SwiftPlotDiagram _diagram => this.ccMain.Diagram as SwiftPlotDiagram;
+
+        private List<AdditionalSignalRow> _currentSignalList;
+
+        #region Ctor
         public TechnologyControl()
         {
             InitializeComponent();
 
-            this.chartDetail.ConstantLineMoved += ChartDetail_ConstantLineMoved;
-            this.chartDetail.MouseUp += ChartDetail_MouseUp;
-            this.chartDetail.CustomDrawCrosshair += ChartDetail_CustomDrawCrosshair;
+            this.ccAnalysis.ConstantLineMoved += ccAnalysis_ConstantLineMoved;
+            this.ccAnalysis.MouseUp += ccAnalysisl_MouseUp;
+            this.ccAnalysis.CustomDrawCrosshair += ccAnalysis_CustomDrawCrosshair;
         }
 
-        bool _isRepaintCncLogColors = false;
-        private void ChartDetail_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e)
+        private void TechnologyControl_Load(object sender, EventArgs e)
+        {
+            this.PrepareUIElements();
+
+            this.deFrom.DateTime = DateTime.Now.Date;
+            this.deTo.DateTime = DateTime.Now.Date.AddDays(-1);
+            this.teFrom.EditValue = TimeSpan.Zero;
+            this.teTo.EditValue = DateTime.Now.TimeOfDay;
+
+            this.AnalizeTool = new AnalizeTool(new TestIzm.Properties.Settings().UrlFiles);
+
+            this.lueMachine.Properties.DataSource = DataManager.Machines;
+            this.lueMachine.ItemIndex = 0;
+        }
+
+        private void PrepareUIElements()
+        {
+            teMin.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            teMin.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
+
+            teMax.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            teMax.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
+
+            teMaxCount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            teMaxCount.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
+
+            teMinCount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            teMinCount.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
+
+            teNorm.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            teNorm.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
+        }
+
+        #endregion
+
+        private void sbLoad_Click(object sender, EventArgs e)
+        {
+            this.LoadData();
+        }
+
+        private void lueMachine_EditValueChanged(object sender, EventArgs e)
+        {
+            this.FillMachineParam();
+        }
+
+        private void lueFirstMachineParam_EditValueChanged(object sender, EventArgs e)
+        {
+            if (this._selectedFirstMachineParam is null || this._selectedFirstMachineParam.Id == 0)
+                return;
+
+            this.AnalizeTool.SetMainParam(this._selectedFirstMachineParam.Id);
+        }
+
+        private void AnalysisChanged(object sender, EventArgs e)
+        {
+            AddSeriesComparerChart(this._analisis);
+        }
+
+        private void FillMachineParam()
+        {
+            var notSelectedItem = this.GetNotSelectedItem();
+            var rowXList = new List<RowX>() { notSelectedItem };
+
+            if (this._selectedMachine is null)
+            {
+                this.lueFirstMachineParam.Properties.DataSource = rowXList;
+                this.lueFirstMachineParam.EditValue = notSelectedItem;
+
+                this.lueSecondMachineParam.Properties.DataSource = rowXList;
+                this.lueSecondMachineParam.EditValue = notSelectedItem;
+                return;
+            }
+
+            var selectedFirstMachineParam = this._selectedFirstMachineParam;
+            var selectedSecondMachineParam = this._selectedSecondMachineParam;
+
+            RowX setForSelectedFirst = null;
+            RowX setForSelectedSecond = null;
+
+            foreach (var paramInMachine in this._selectedMachine.ParameterList)
+            {
+                var rowX = new RowX
+                {
+                    Id = paramInMachine.Id,
+                    MachineParamId = paramInMachine.MachineParamID,
+                    Name = paramInMachine.Name,
+                    SignalList = AnalizeTool.GetTelemetry(paramInMachine.Id)
+                };
+
+                if (selectedFirstMachineParam?.MachineParamId == paramInMachine.MachineParamID)
+                    setForSelectedFirst = rowX;
+
+                if (selectedSecondMachineParam?.MachineParamId == paramInMachine.MachineParamID)
+                    setForSelectedSecond = rowX;
+
+                rowXList.Add(rowX);
+            }
+
+            this.lueFirstMachineParam.Properties.DataSource = rowXList;
+            this.lueFirstMachineParam.EditValue = setForSelectedFirst ?? rowXList.FirstOrDefault();
+
+            this.lueSecondMachineParam.Properties.DataSource = rowXList;
+            this.lueSecondMachineParam.EditValue = setForSelectedSecond ?? rowXList.FirstOrDefault();
+        }
+
+        private RowX GetNotSelectedItem() => new RowX { Id = 0, MachineParamId = 0, Name = "Не выбрано", SignalList = new List<AdditionalSignalRow>() };
+
+        private void LoadData()
+        {
+            if (this._selectedMachine is null)
+                return;
+
+            var dtFrom = this.deFrom.DateTime.Date.Add(this.teFrom.Time.TimeOfDay);
+            var dtTo = this.deTo.DateTime.Date.Add(this.teTo.Time.TimeOfDay);
+
+            AnalizeTool.Load(dtFrom, dtTo, this._selectedMachine);
+            AddSeriesToMainChart();
+            //BuildChartPie();
+        }
+
+        private SeriesPoint AddSeriesPointChart(UpModel up, int index, double value)
+        {
+            var sp = new SeriesPoint("CNC " + index, value);
+            sp.Tag = up;
+            sp.Color = Color.LightGray;
+
+            if (up.UpType == UpModel.UpTypeEnum.Good)
+                sp.Color = Color.LightGreen;
+
+            if (up.UpType == UpModel.UpTypeEnum.Warning)
+                sp.Color = Color.Yellow;
+
+            if (up.UpType == UpModel.UpTypeEnum.Error)
+                sp.Color = Color.LightPink;
+
+            return sp;
+        }
+
+        private double GetValue(UpModel a, int paramId, int valueTypeId)
+        {
+            var mark = a.GetMark(paramId);
+
+            if (valueTypeId == 0)
+                return mark.Avg;
+
+            if (valueTypeId == 1)
+                return mark.AvgDiff;
+
+            if (valueTypeId == 2)
+                return mark.Disp;
+
+            if (valueTypeId == 3)
+                return a.Time;
+
+            return mark.Avg;
+        }
+
+        // здесь обработка УП ТО и заготовок
+        private void RepaintCncLogColors()
+        {
+            var analisis = _analisis;
+
+            if (analisis == null)
+                analisis = this.AnalizeTool.GetAnalisis(lastMouseDatetime);
+
+            if (analisis == null)
+                return;
+
+            if (this._selectedFirstMachineParam is null || this._selectedFirstMachineParam.Id == 0)
+                return;
+
+            if (this._diagram is null)
+                return;
+
+            var diagram = this._diagram;
+            diagram.AxisX.Strips.Clear();
+
+            analisis.ColorizeMost(this._selectedFirstMachineParam.Id);
+
+            foreach (var upModel in analisis.UpModelList)
+            {
+                var strip = new Strip("CNC " + upModel.Index, upModel.Up.DtStart, upModel.Up.DtEnd) { Color = Color.LightGray };
+
+                if (upModel.IsMost)
+                {
+                    strip.Color = Color.LightGreen;
+
+                    if (upModel.UpType == UpModel.UpTypeEnum.Warning)
+                        strip.Color = Color.Yellow;
+
+                    if (upModel.UpType == UpModel.UpTypeEnum.Error)
+                        strip.Color = Color.LightPink;
+                }
+
+                if (upModel == _selectedUp)
+                    strip.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+
+                diagram.AxisX.Strips.Add(strip);
+            }
+
+            AddSeriesToAnalysisChart(analisis);
+        }
+
+        #region Unused
+
+        bool isShowAll = true;
+
+        private void sbHideAll_Click(object sender, EventArgs e)
+        {
+            this.isShowAll = !this.isShowAll;
+
+            this.lcgLevels.Visibility = this.isShowAll ? DevExpress.XtraLayout.Utils.LayoutVisibility.Always : DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            this.lcgOtcl.Visibility = this.isShowAll ? DevExpress.XtraLayout.Utils.LayoutVisibility.Always : DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+        }
+
+        private void BuildChartPie()
+        {
+            this.chartPie.Series.Clear();
+            chartPie.Titles.Clear();
+
+            try
+            {
+                var series1 = new Series("Land Area by Country", ViewType.Pie);
+
+                series1.DataSource = DataPointChartPie.GetDataPoints();
+                series1.ArgumentDataMember = "Argument";
+                series1.ValueDataMembers.AddRange(new string[] { "Value" });
+
+                chartPie.Series.Add(series1);
+
+                series1.Label.TextPattern = "{VP:p0} ({V:.##})";
+
+                chartPie.Titles.Add(new ChartTitle());
+                chartPie.Titles[0].Text = "Warnings";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public class DataPointChartPie
+        {
+            public string Argument { get; set; }
+            public double Value { get; set; }
+
+            public static List<DataPointChartPie> GetDataPoints()
+            {
+                return new List<DataPointChartPie>
+                {
+                    new DataPointChartPie { Argument = "Critical",    Value = 4.2},
+                    new DataPointChartPie { Argument = "Warnings",    Value = 16.3},
+                    new DataPointChartPie { Argument = "Ok",    Value = 79.5},
+                };
+            }
+        }
+
+        #endregion
+
+        #region Main Chart
+
+        private DateTime lastMouseDatetime;
+        private bool _isNeedZoom = false;
+
+        // здесь обработка УП ТО и заготовок
+        private void ccMain_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e)
+        {
+            if (e.CrosshairElementGroups.Count == 0 || this._selectedFirstMachineParam is null)
+                return;
+
+            var group = e.CrosshairElementGroups.First();
+            this.lastMouseDatetime = group.CrosshairElements[0].SeriesPoint.DateTimeArgument;
+
+            var upModel = this.AnalizeTool.GetUpModel(this.lastMouseDatetime);
+
+            var state = "idle";
+            var upName = "-";
+            var upInfo = "-";
+
+            if (upModel == null)
+                state = "-";
+            else
+            {
+                // this.ups = DataManager.CncLog.Where(cncLog => cncLog.Machine.ID == AnalizeTool.Machine.Id && cncLog.NameUP == up.NameUP && cncLog.DtStart >= up.DtStart.AddDays(-1) && cncLog.DtStart <= up.DtStart.AddDays(1)).ToList();
+
+                upName = upModel.Up.NameUP + " - " + upModel.Index;
+                upInfo = "Time: " + new TimeSpan(0, 0, 0, 0, upModel.Up.ProcessingTime.ToInt(0)).ToString() + Environment.NewLine
+                    + "F%: " + upModel.Up.AvgPercentCorrectFeed?.ToString("0.0") + Environment.NewLine
+                    + "S%: " + upModel.Up.AvgPercentCorrectSpeed?.ToString("0.0") + Environment.NewLine;
+
+                var mark = upModel.GetMark(this._selectedFirstMachineParam.Id);
+
+                if (mark != null)
+                {
+                    upInfo += this._selectedFirstMachineParam.Name + Environment.NewLine + " Avg: " + mark.Avg.ToString("0.00") + Environment.NewLine;
+                    upInfo += " Avg diff: " + mark.AvgDiff.ToString("0.00") + Environment.NewLine;
+                    upInfo += " Dispersion: " + mark.Disp.ToString("0.00") + Environment.NewLine;
+                }
+                else
+                {
+                    upInfo += " no mark: " + this._selectedFirstMachineParam.Name;
+                }
+
+                if (upModel.Up.DtEnd > lastMouseDatetime)
+                    state = "running";
+            }
+
+            if (group.CrosshairElements[0] != null)
+                group.HeaderElement.Text = String.Format("Cnc: {1} State: {2} {3}{4}Datetime: {0:yyyy.MM.dd HH:mm:ss}", lastMouseDatetime, upName, state, Environment.NewLine, upInfo);
+
+        }
+
+        private void ccMain_Resize(object sender, EventArgs e)
+        {
+            _isNeedZoom = true;
+        }
+
+        // здесь обработка УП ТО и заготовок
+        private void ccMain_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (this._diagram != null)
+                    this._diagram.AxisX.Strips.Clear();
+
+                this._selectedUp = null;
+            }
+        }
+
+        // здесь обработка УП ТО и заготовок
+        private void ccMain_DoubleClick(object sender, EventArgs e)
+        {
+            this._analisis = null;
+            RepaintCncLogColors();
+        }
+
+        private void ccMain_Zoom(object sender, ChartZoomEventArgs e)
+        {
+            _isNeedZoom = true; ;
+        }
+
+        private void AutoZoomY()
+        {
+            if (this._diagram is null)
+                return;
+
+            var diagram = this._diagram;
+            var lst = this._currentSignalList?.Where(a => a.Datetime >= (DateTime)diagram.AxisX.VisualRange.MinValue && a.Datetime <= (DateTime)diagram.AxisX.VisualRange.MaxValue);
+            var lstIsEmpty = lst is null || lst.Count() == 0;
+            var minY = !lstIsEmpty ? lst.Min(a => a.Value) * 0.9 : 0;
+            var maxY = !lstIsEmpty ? lst.Max(a => a.Value) * 1.11 : 0;
+
+            diagram.AxisY.VisualRange.MinValue = minY;
+            diagram.AxisY.VisualRange.MaxValue = maxY;
+
+            if (this._selectedSecondMachineParam != null)
+            {
+                lst = this._selectedSecondMachineParam.SignalList?.Where(a => a.Datetime >= (DateTime)diagram.AxisX.VisualRange.MinValue && a.Datetime <= (DateTime)diagram.AxisX.VisualRange.MaxValue);
+                lstIsEmpty = lst is null || lst.Count() == 0;
+                minY = !lstIsEmpty ? lst.Min(a => a.Value) * 0.9 : 0;
+                maxY = !lstIsEmpty ? lst.Max(a => a.Value) * 1.11 : 0;
+
+                var axis = (ccMain.Series[1]?.View as SwiftPlotSeriesView)?.AxisY;
+                if (axis is null)
+                    return;
+
+                axis.VisualRange.MinValue = minY;
+                axis.VisualRange.MaxValue = maxY;
+            }
+        }
+
+        private void ccMain_Scroll(object sender, ChartScrollEventArgs e)
+        {
+            this._isNeedZoom = true;
+        }
+
+        private void tmAutoZoom_Tick(object sender, EventArgs e)
+        {
+            if (this._isNeedZoom)
+                AutoZoomY();
+
+            this._isNeedZoom = false;
+
+            if (this._isRepaintCncLogColors)
+            {
+                this._isRepaintCncLogColors = false;
+                RepaintCncLogColors();
+            }
+
+            this.tmAutoZoom.Interval = 500;
+        }
+
+        // здесь обработка УП ТО и заготовок
+        void AddSeriesToMainChart()
+        {
+            this.ccMain.Series.Clear();
+
+            if (this._selectedFirstMachineParam is null || this._selectedFirstMachineParam.Id == 0)
+            {
+                this._currentSignalList = new List<AdditionalSignalRow>();
+                return;
+            }
+
+            this._currentSignalList = this._selectedFirstMachineParam.SignalList ?? new List<AdditionalSignalRow>();
+
+            this.ccMain.BeginInit();
+            var series = new Series();
+            var view = new SwiftPlotSeriesView();
+            series.View = view;
+
+            series.Points.AddRange(this._currentSignalList.Select(a => new SeriesPoint(new DateTime(2000, 1, 1)
+                .AddSeconds(a.DatetimeSeconds), a.Value)).ToArray());
+
+            this.ccMain.Series.Add(series);
+            this.ccMain.EndInit();
+
+            if (this._diagram is null)
+                return;
+
+            var diagram = this._diagram;
+            diagram.AxisX.ConstantLines.Clear();
+
+            //здесь обработка ТО и УП и заготовок
+            foreach (var seriesAnalisis in this.AnalizeTool.UpSeriesAnalisisList)
+            {
+                var line = new ConstantLine(seriesAnalisis.UpName, seriesAnalisis.DtFrom) { ShowInLegend = false };
+                line.Title.Text = seriesAnalisis.UpName;
+                line.Title.Visible = true;
+
+                diagram.AxisX.ConstantLines.Add(line);
+            }
+
+            if (diagram.Panes.Count > 0)
+                diagram.Panes.Clear();
+
+            if (diagram.SecondaryAxesY.Count > 0)
+                diagram.SecondaryAxesY.Clear();
+
+            if (this._selectedSecondMachineParam != null && this._selectedSecondMachineParam.SignalList?.Count > 0)
+            {
+                var pane = new XYDiagramPane("Next");
+                diagram.Panes.Add(pane);
+
+                series = new Series();
+                var view2 = new SwiftPlotSeriesView();
+                series.View = view2;
+                series.Points.AddRange(this._selectedSecondMachineParam.SignalList.Select(a => new SeriesPoint(new DateTime(2000, 1, 1).AddSeconds(a.DatetimeSeconds), a.Value)).ToArray());
+                view2.Pane = pane;
+
+                ccMain.CrosshairOptions.ShowOnlyInFocusedPane = false;
+                ccMain.Series.Add(series);
+
+                diagram.SecondaryAxesY.Add(new SwiftPlotDiagramSecondaryAxisY("My Axis Y"));
+                diagram.SecondaryAxesY[0].Alignment = AxisAlignment.Near;
+
+                view2.AxisY = diagram.SecondaryAxesY[0];
+            }
+
+            diagram.EnableAxisXZooming = true;
+            diagram.EnableAxisXScrolling = true;
+            diagram.AxisY.VisualRange.Auto = true;
+
+            diagram.AxisY.Strips.Clear();
+            this._isNeedZoom = true;
+        }
+
+        #endregion
+
+        #region Analysis Chart
+
+        //обработка УП ТО и заготовок
+        private UpModel _selectedUp;
+        UpSeriesAnalisis _analisis;
+
+        private bool _isRepaintCncLogColors = false;
+        private bool _isChartDetailConstantLineMoved = false;
+        private bool _isTimeConstantLineMoved = false;
+        private void ccAnalysis_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e)
         {
             if (e.CrosshairElementGroups.Count == 0)
                 return;
 
             var upModel = e.CrosshairElementGroups.FirstOrDefault()?.CrosshairElements.FirstOrDefault()?.SeriesPoint.Tag as UpModel;
-
-            if (upModel == null)
+            if (upModel is null)
                 return;
 
-            if (_selectedUp != null && _selectedUp == upModel)
+            if (this._selectedUp != null && this._selectedUp == upModel)
                 return;
 
-            _selectedUp = upModel;
-            _isRepaintCncLogColors = true;
+            this._selectedUp = upModel;
+            this._isRepaintCncLogColors = true;
 
-            tmAutoZoom.Interval = 50;
+            this.tmAutoZoom.Interval = 50;
         }
 
-        private void ChartDetail_MouseUp(object sender, MouseEventArgs e)
+        //обработка УП ТО и заготовок
+        private void ccAnalysisl_MouseUp(object sender, MouseEventArgs e)
         {
-            if (this._analisis == null)
+            if (this._analisis is null)
                 return;
 
-            if (_isChartDetailConstantLineMoved)
+            if (this._isChartDetailConstantLineMoved)
             {
-                _isChartDetailConstantLineMoved = false;
+                this._isChartDetailConstantLineMoved = false;
                 this._analisis.UCLTime = (double)UCLTimeLine.AxisValue;
                 this._analisis.LCLTime = (double)LCLTimeLine.AxisValue;
                 this._analisis.MostAvgTime = (double)MeenTimeLine.AxisValue;
@@ -93,145 +569,45 @@ namespace WindowsFormsApp1
                 this._analisis.ColorizeMost();
 
                 this.RepaintCncLogColors();
-                this.AddSeriesDetail(this._analisis);
+                this.AddSeriesToAnalysisChart(this._analisis);
             }
         }
 
-        bool _isChartDetailConstantLineMoved = false;
-        bool _isTimeConstantLineMoved = false;
-
-        private void ChartDetail_ConstantLineMoved(object sender, ConstantLineMovedEventArgs e)
+        private void ccAnalysis_ConstantLineMoved(object sender, ConstantLineMovedEventArgs e)
         {
-            _isChartDetailConstantLineMoved = true;
+            this._isChartDetailConstantLineMoved = true;
 
             if (e.ConstantLine == UCLTimeLine || e.ConstantLine == LCLTimeLine)
             {
-                _isTimeConstantLineMoved = true;
+                this._isTimeConstantLineMoved = true;
             }
         }
 
-        private void sbLoad_Click(object sender, EventArgs e)
+        //обработка УП ТО и заготовок
+        void AddSeriesToAnalysisChart(UpSeriesAnalisis analisis)
         {
-            LoadData();
-
-            var item = leMachineParam.GetSelectedDataRow() as RowX;
-
-            if (item == null)
+            if (this._selectedFirstMachineParam is null || this._selectedFirstMachineParam.Id == 0)
                 return;
 
-            AddSeries(item.List);
-        }
-
-        private void TechnologyControl_Load(object sender, EventArgs e)
-        {
-            this.PrepareUIElements();
-
-            this.dtFromDate.DateTime = new DateTime(2020, 02, 01);
-            this.dtToDate.DateTime = new DateTime(2020, 03, 1);
-
-            this.AnalizeTool = new AnalizeTool(new TestIzm.Properties.Settings().UrlFiles);
-
-            this.leMachine.Properties.DataSource = DataManager.Machines.ToArray();
-            this.leMachine.ItemIndex = 1;
-        }
-
-        private void PrepareUIElements()
-        {
-            teMin.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            teMin.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
-
-            teMax.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            teMax.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
-
-            teMaxCount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            teMaxCount.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
-
-            teMinCount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            teMinCount.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
-
-            teNorm.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            teNorm.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Default;
-        }
-
-        private void leMachine_EditValueChanged(object sender, EventArgs e)
-        {
-            var machine = leMachine.GetSelectedDataRow() as MachineModel;
-            var logList = DataManager.CncLog.Where(log => log.Machine.ID == machine.Id);
-            this.gcUP.DataSource = logList;
-
-            LoadData();
-        }
-
-        private void leMachineParam_EditValueChanged(object sender, EventArgs e)
-        {
-            var item = leMachineParam.GetSelectedDataRow() as RowX;
-
-            if (item == null)
-                return;
-
-            this.AnalizeTool.SetMainParam(item.Id);
-
-            AddSeries(item.List);
-        }
-
-        private void LoadData()
-        {
-            var machine = leMachine.GetSelectedDataRow() as MachineModel;
-
-            if (machine == null)
-                return;
-
-            var dtFrom = dtFromDate.DateTime.Date.Add(new TimeSpan(teTimeFrom.Time.TimeOfDay.Ticks));
-            var dtTo = dtToDate.DateTime.Date.Add(new TimeSpan(teTimeTo.Time.TimeOfDay.Ticks));
-
-            AnalizeTool.Load(dtFrom, dtTo, machine);
-
-            var propList = new List<RowX>();
-
-            foreach (var p in machine.ParameterList)
-            {
-                p.List = AnalizeTool.GetTelemetry(p.Id);
-
-                propList.Add(new RowX { Id = p.Id, Name = p.Name + (p.List == null ? "" : " - " + p.List.Count), List = p.List });
-            }
-
-            var index = 0; // propList.Count > 6 ? 6 : (propList.Count - 1);
-
-            leMachineParam.Properties.DataSource = propList;
-            leMachineParam.ItemIndex = index;
-
-            leNextMachineParam.Properties.Items.Clear();
-            leNextMachineParam.Properties.Items.AddRange(propList);
-            // leNextMachineParam.SelectedIndex = index - 1;
-
-            AddSeries(propList[index].List);
-
-            BuildChartPie();
-        }
-
-        UpSeriesAnalisis _analisis;
-        void AddSeriesDetail(UpSeriesAnalisis analisis)
-        {
             _analisis = analisis;
-            var chart = chartDetail;
+            var chart = ccAnalysis;
             chart.BeginInit();
             chart.Series.Clear();
-            var rowX = this.GetItemParam();
 
             var seriesAvg = new Series("Avg", ViewType.Bar);
             var seriesTime = new Series("Time", ViewType.Line);
 
-            var valueTypeId = cbAvgValues.SelectedIndex;
+            var valueTypeId = ceAvg.SelectedIndex;
 
             if (analisis == null)
                 return;
 
             var list = analisis.UpModelList.ToList();
 
-            if (this.ceIsHideOthers.Checked)
+            if (this.ceIsHideFalseData.Checked)
                 list = list.Where(m => m.UpType != UpModel.UpTypeEnum.Other).ToList();
 
-            seriesAvg.Points.AddRange(list.Select(a => AddSeriesPointChart(a, a.Index, GetValue(a, rowX.Id, valueTypeId))).ToArray());
+            seriesAvg.Points.AddRange(list.Select(a => AddSeriesPointChart(a, a.Index, GetValue(a, this._selectedFirstMachineParam.Id, valueTypeId))).ToArray());
             chart.Series.Add(seriesAvg);
 
             seriesTime.Points.AddRange(list.Select(a => AddSeriesPointChart(a, a.Index, a.Time)).ToArray());
@@ -281,7 +657,7 @@ namespace WindowsFormsApp1
 
             this.UCLline = new ConstantLine("UCL", analisis.UCL);
             this.UCLline.ShowInLegend = false;
-            this.UCLline.RuntimeMoving = true; 
+            this.UCLline.RuntimeMoving = true;
             this.UCLline.Color = Color.Red;
             this.UCLline.LineStyle.DashStyle = DashStyle.Dash;
             axisY.ConstantLines.Add(this.UCLline);
@@ -307,7 +683,7 @@ namespace WindowsFormsApp1
             this.LCLWarningline.LineStyle.DashStyle = DashStyle.DashDotDot;
             axisY.ConstantLines.Add(this.LCLWarningline);
 
-            if (cbVisuals.Properties.Items[1].CheckState != CheckState.Checked)
+            if (ccbeAdditionalParam.Properties.Items[1].CheckState != CheckState.Checked)
             {
                 this.Meenline.Visible = false;
                 this.UCLline.Visible = false;
@@ -316,7 +692,7 @@ namespace WindowsFormsApp1
                 this.LCLWarningline.Visible = false;
             }
 
-            if (cbVisuals.Properties.Items[0].CheckState != CheckState.Checked)
+            if (ccbeAdditionalParam.Properties.Items[0].CheckState != CheckState.Checked)
             {
                 this.MeenTimeLine.Visible = false;
                 this.UCLTimeLine.Visible = false;
@@ -324,374 +700,19 @@ namespace WindowsFormsApp1
             }
         }
 
-        private SeriesPoint AddSeriesPointChart(UpModel up, int index, double value)
-        {
-            var sp = new SeriesPoint("CNC " + index, value);
-            sp.Tag = up;
-            sp.Color = Color.LightGray;
-
-            if (up.UpType == UpModel.UpTypeEnum.Good)
-                sp.Color = Color.LightGreen;
-
-            if (up.UpType == UpModel.UpTypeEnum.Warning)
-                sp.Color = Color.Yellow;
-
-            if (up.UpType == UpModel.UpTypeEnum.Error)
-                sp.Color = Color.LightPink;
-
-            return sp;
-        }
-
-        private double GetValue(UpModel a, int paramId, int valueTypeId)
-        {
-            var mark = a.GetMark(paramId);
-
-            if (valueTypeId == 0)
-                return mark.Avg;
-
-            if (valueTypeId == 1)
-                return mark.AvgDiff;
-
-            if (valueTypeId == 2)
-                return mark.Disp;
-
-            if (valueTypeId == 3)
-                return a.Time;
-
-            return mark.Avg;
-        }
-
-        List<AdditionalSignalRow> _listData;
-        void AddSeries(List<AdditionalSignalRow> list)
-        {
-            _listData = list;
-            chartControl1.BeginInit();
-            chartControl1.Series.Clear();
-
-            var series = new Series();
-
-            var view = new SwiftPlotSeriesView();
-            series.View = view;
-
-            series.Points.AddRange(list.Select(a => new SeriesPoint(new DateTime(2000, 1, 1).AddSeconds(a.DatetimeSeconds), a.Value)).ToArray());
-            chartControl1.Series.Add(series);
-
-            chartControl1.EndInit();
-            var diagram = (chartControl1.Diagram as SwiftPlotDiagram);
-            diagram.AxisX.ConstantLines.Clear();
-
-            foreach (var seriesAnalisis in this.AnalizeTool.UpSeriesAnalisisList)
-            {
-                var line = new ConstantLine(seriesAnalisis.UpName, seriesAnalisis.DtFrom) { ShowInLegend = false };
-                line.Title.Text = seriesAnalisis.UpName;
-                line.Title.Visible = true;
-
-                diagram.AxisX.ConstantLines.Add(line);
-            }
-
-            if (diagram.Panes.Count > 0)
-                diagram.Panes.Clear();
-
-            if (diagram.SecondaryAxesY.Count > 0)
-                diagram.SecondaryAxesY.Clear();
-
-            if (leNextMachineParam.SelectedIndex >= 0)
-            {
-                var item = leNextMachineParam.SelectedItem as RowX;
-
-                var pane = new XYDiagramPane("Next");
-
-                diagram.Panes.Add(pane);
-
-                series = new Series();
-                var view2 = new SwiftPlotSeriesView();
-                series.View = view2;
-                series.Points.AddRange(item.List.Select(a => new SeriesPoint(new DateTime(2000, 1, 1).AddSeconds(a.DatetimeSeconds), a.Value)).ToArray());
-                view2.Pane = pane;
-
-                chartControl1.CrosshairOptions.ShowOnlyInFocusedPane = false;
-                chartControl1.Series.Add(series);
-
-                diagram.SecondaryAxesY.Add(new SwiftPlotDiagramSecondaryAxisY("My Axis Y"));
-                diagram.SecondaryAxesY[0].Alignment = AxisAlignment.Near;
-
-                view2.AxisY = diagram.SecondaryAxesY[0];
-            }
-
-            diagram.EnableAxisXZooming = true;
-            diagram.EnableAxisXScrolling = true;
-            diagram.AxisY.VisualRange.Auto = true;
-
-            diagram.AxisY.Strips.Clear();
-
-            _isNeedZoom = true;
-        }
-
-        private void BuildChartPie()
-        {
-            this.chartPie.Series.Clear();
-            chartPie.Titles.Clear();
-
-            try
-            {
-                var series1 = new Series("Land Area by Country", ViewType.Pie);
-
-                series1.DataSource = DataPointChartPie.GetDataPoints();
-                series1.ArgumentDataMember = "Argument";
-                series1.ValueDataMembers.AddRange(new string[] { "Value" });
-
-                chartPie.Series.Add(series1);
-
-                series1.Label.TextPattern = "{VP:p0} ({V:.##})";
-
-                chartPie.Titles.Add(new ChartTitle());
-                chartPie.Titles[0].Text = "Warnings";
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        public class DataPointChartPie
-        {
-            public string Argument { get; set; }
-            public double Value { get; set; }
-
-            public static List<DataPointChartPie> GetDataPoints()
-            {
-                return new List<DataPointChartPie>
-                {
-                    new DataPointChartPie { Argument = "Critical",    Value = 4.2},
-                    new DataPointChartPie { Argument = "Warnings",    Value = 16.3},
-                    new DataPointChartPie { Argument = "Ok",    Value = 79.5},
-                };
-            }
-        }
-
-        // OperatingProgramExecutionLog up;
-        DateTime lastMouseDatetime;
-        private void chartControl1_CustomDrawCrosshair(object sender, CustomDrawCrosshairEventArgs e)
-        {
-            if (e.CrosshairElementGroups.Count == 0)
-                return;
-
-            var itemParam = GetItemParam();
-
-            var group = e.CrosshairElementGroups.First();
-            lastMouseDatetime = group.CrosshairElements[0].SeriesPoint.DateTimeArgument;
-
-            var upModel = this.AnalizeTool.GetUpModel(lastMouseDatetime);
-
-            var state = "idle";
-            var upName = "-";
-            var upInfo = "-";
-
-            if (upModel == null)
-                state = "-";
-            else
-            {
-                // this.ups = DataManager.CncLog.Where(cncLog => cncLog.Machine.ID == AnalizeTool.Machine.Id && cncLog.NameUP == up.NameUP && cncLog.DtStart >= up.DtStart.AddDays(-1) && cncLog.DtStart <= up.DtStart.AddDays(1)).ToList();
-
-                upName = upModel.Up.NameUP + " - " + upModel.Index;
-                upInfo = "Time: " + new TimeSpan(0, 0, 0, 0, upModel.Up.ProcessingTime.ToInt(0)).ToString() + Environment.NewLine
-                    + "F%: " + upModel.Up.AvgPercentCorrectFeed?.ToString("0.0") + Environment.NewLine
-                    + "S%: " + upModel.Up.AvgPercentCorrectSpeed?.ToString("0.0") + Environment.NewLine;
-
-                var mark = upModel.GetMark(itemParam.Id);
-
-                if (mark != null)
-                {
-                    upInfo += itemParam.Name + Environment.NewLine + " Avg: " + mark.Avg.ToString("0.00") + Environment.NewLine;
-                    upInfo += " Avg diff: " + mark.AvgDiff.ToString("0.00") + Environment.NewLine;
-                    upInfo += " Dispersion: " + mark.Disp.ToString("0.00") + Environment.NewLine;
-                }
-                else
-                {
-                    upInfo += " no mark: " + itemParam.Name;
-                }
-
-                if (upModel.Up.DtEnd > lastMouseDatetime)
-                    state = "running";
-            }
-
-            if (group.CrosshairElements[0] != null)
-                group.HeaderElement.Text = String.Format("Cnc: {1} State: {2} {3}{4}Datetime: {0:yyyy.MM.dd HH:mm:ss}", lastMouseDatetime, upName, state, Environment.NewLine, upInfo);
-
-        }
-
-        private RowX GetItemParam()
-        {
-            var itemParam = leMachineParam.GetSelectedDataRow() as RowX;
-            var listParams = leMachineParam.Properties.DataSource as List<RowX>;
-            if (itemParam == null)
-                itemParam = listParams.FirstOrDefault();
-            return itemParam;
-        }
-
-        bool isShowAll = true;
-        private void sbHideAll_Click(object sender, EventArgs e)
-        {
-            isShowAll = !isShowAll;
-
-            lcgLevels.Visibility = isShowAll ? DevExpress.XtraLayout.Utils.LayoutVisibility.Always : DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lcgOtcl.Visibility = isShowAll ? DevExpress.XtraLayout.Utils.LayoutVisibility.Always : DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-        }
-
-        private void chartControl1_Zoom(object sender, ChartZoomEventArgs e)
-        {
-            _isNeedZoom = true; ;
-        }
-
-        private void AutoZoomY()
-        {
-            var diagram = (chartControl1.Diagram as SwiftPlotDiagram);
-
-            if (diagram == null)
-                return;
-
-            var lst = _listData.Where(a => a.Datetime >= (DateTime)diagram.AxisX.VisualRange.MinValue && a.Datetime <= (DateTime)diagram.AxisX.VisualRange.MaxValue);
-            var minY = lst.Min(a => a.Value) * 0.9;
-            var maxY = lst.Max(a => a.Value) * 1.11;
-
-            diagram.AxisY.VisualRange.MinValue = minY;
-            diagram.AxisY.VisualRange.MaxValue = maxY;
-
-            if (leNextMachineParam.SelectedItem != null)
-            {
-                var rowx = leNextMachineParam.SelectedItem as RowX;
-
-                lst = rowx.List.Where(a => a.Datetime >= (DateTime)diagram.AxisX.VisualRange.MinValue && a.Datetime <= (DateTime)diagram.AxisX.VisualRange.MaxValue);
-
-                minY = lst.Min(a => a.Value) * 0.9;
-                maxY = lst.Max(a => a.Value) * 1.11;
-
-                var axis = (chartControl1.Series[1].View as SwiftPlotSeriesView).AxisY;
-
-                axis.VisualRange.MinValue = minY;
-                axis.VisualRange.MaxValue = maxY;
-            }
-        }
-
-        private void chartControl1_Click(object sender, EventArgs e)
-        {
-            // diagram.AxisY.ConstantLines.Clear();
-            // var diagram = (chartControl1.Diagram as SwiftPlotDiagram);
-            // 
-            // foreach (var seriesAnalisis in this.AnalizeTool.UpSeriesAnalisisList)
-            // {
-            //     //diagram.AxisX.ConstantLines.Add(new ConstantLine(seriesAnalisis.UpName, seriesAnalisis.DtFrom) { ShowInLegend = false });
-            // }
-            // 
-            // var line = new ConstantLine(this.lastMouseDatetime.ToString(), this.lastMouseDatetime);
-            // 
-            // diagram.AxisX.ConstantLines.Add(line);
-        }
-
-        private void chartControl1_Scroll(object sender, ChartScrollEventArgs e)
-        {
-            _isNeedZoom = true;
-        }
-
-        private void chartControl1_Resize(object sender, EventArgs e)
-        {
-            _isNeedZoom = true;
-        }
-
-        private void chartControl1_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                var diagram = (chartControl1.Diagram as SwiftPlotDiagram);
-                diagram.AxisX.Strips.Clear();
-                _selectedUp = null;
-            }
-        }
-
-        private void chartControl1_DoubleClick(object sender, EventArgs e)
-        {
-            _analisis = null;
-            RepaintCncLogColors();
-        }
-
-        private void RepaintCncLogColors()
-        {
-            var analisis = _analisis;
-
-            if (analisis == null)
-                analisis = this.AnalizeTool.GetAnalisis(lastMouseDatetime);
-
-            if (analisis == null)
-                return;
-
-            var itemParam = GetItemParam();
-
-            var diagram = (chartControl1.Diagram as SwiftPlotDiagram);
-            diagram.AxisX.Strips.Clear();
-
-            analisis.ColorizeMost(itemParam.Id);
-
-            foreach (var upModel in analisis.UpModelList)
-            {
-                var strip = new Strip("CNC " + upModel.Index, upModel.Up.DtStart, upModel.Up.DtEnd) { Color = Color.LightGray };
-
-                if (upModel.IsMost)
-                {
-                    strip.Color = Color.LightGreen;
-
-                    if (upModel.UpType == UpModel.UpTypeEnum.Warning)
-                        strip.Color = Color.Yellow;
-
-                    if (upModel.UpType == UpModel.UpTypeEnum.Error)
-                        strip.Color = Color.LightPink;
-                }
-
-                if (upModel == _selectedUp)
-                    strip.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
-
-                diagram.AxisX.Strips.Add(strip);
-            }
-
-            AddSeriesDetail(analisis);
-        }
-
-        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AddSeriesDetail(_analisis);
-
-        }
-
-        private void leNextMachineParam_EditValueChanged(object sender, EventArgs e)
-        {
-            var item = leMachineParam.GetSelectedDataRow() as RowX;
-
-            if (item == null)
-                return;
-
-            AddSeries(item.List);
-
-        }
-
-        private void ceIsHideOthers_CheckedChanged(object sender, EventArgs e)
-        {
-            AddSeriesDetail(_analisis);
-
-        }
-
-        private void chartDetail_QueryCursor(object sender, QueryCursorEventArgs e)
-        {
-
-        }
-
-        private void chartDetail_SelectedItemsChanged(object sender, SelectedItemsChangedEventArgs e)
+        //обработка УП ТО и заготовок
+        private void ccAnalysis_SelectedItemsChanged(object sender, SelectedItemsChangedEventArgs e)
         {
             this.Text = e.NewItems.Count.ToString();
-            var diagram = chartControl1.Diagram as XYDiagram;
+            var diagram = ccMain.Diagram as XYDiagram;
+            if (diagram is null)
+                return;
 
             foreach (SeriesPoint item in e.NewItems)
             {
                 var up = item.Tag as UpModel;
+                if (up is null)
+                    continue;
 
                 var constantLine1 = new ConstantLine("CNC >" + up.Index);
                 diagram.AxisY.ConstantLines.Add(constantLine1);
@@ -705,75 +726,26 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void chartDetail_SelectedItemsChanging(object sender, SelectedItemsChangingEventArgs e)
+        //обработка УП ТО и заготовок
+        private void ccAnalysis_MouseLeave(object sender, EventArgs e)
         {
-            this.Text = e.NewItems.Count.ToString();
-            var diagram = chartControl1.Diagram as XYDiagram;
-
+            this._selectedUp = null;
+            this._isRepaintCncLogColors = true;
         }
 
-        private void leNextMachineParam_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        #endregion
+
+        #region Comparer Chart
+
+        void AddSeriesComparerChart(UpSeriesAnalisis analisis)
         {
-            if (e.Button.Kind == DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)
-                this.leNextMachineParam.SelectedIndex = -1;
-        }
+            if (this._selectedFirstMachineParam is null || this._selectedFirstMachineParam.Id == 0)
+                return;
 
-        private void leNextMachineParam_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        bool _isNeedZoom = false;
-        private void tmAutoZoom_Tick(object sender, EventArgs e)
-        {
-            if (_isNeedZoom)
-                AutoZoomY();
-
-            _isNeedZoom = false;
-
-            if (_isRepaintCncLogColors)
-            {
-                _isRepaintCncLogColors = false;
-                RepaintCncLogColors();
-            }
-
-            tmAutoZoom.Interval = 500;
-        }
-
-        private void chartDetail_Move(object sender, EventArgs e)
-        {
-
-        }
-
-        UpModel _selectedUp = null;
-        private void chartDetail_MouseMove(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void chartDetail_MouseLeave(object sender, EventArgs e)
-        {
-            _selectedUp = null;
-            _isRepaintCncLogColors = true;
-        }
-
-
-        private void cbVisuals_EditValueChanged(object sender, EventArgs e)
-        {
-            AddSeriesDetail(_analisis);
-        }
-
-        private void cbAlternativeParam_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AddSeriesComparer(_analisis);
-        }
-
-        void AddSeriesComparer(UpSeriesAnalisis analisis)
-        {
             _analisis = analisis;
-            var chart = chartDetail;
+            var chart = ccAnalysis;
             chart.BeginInit();
             chart.Series.Clear();
-            var rowX = this.GetItemParam();
 
             // var seriesAvg = new Series("Avg", ViewType.Bar);
             var seriesTime = new Series("Time", ViewType.Bar);
@@ -782,14 +754,14 @@ namespace WindowsFormsApp1
             // разделим Time на 10 частей
             // var min = 
 
-            var valueTypeId = cbAvgValues.SelectedIndex;
+            var valueTypeId = ceAvg.SelectedIndex;
 
             if (analisis == null)
                 return;
 
             var list = analisis.UpModelList.ToList();
 
-            if (this.ceIsHideOthers.Checked)
+            if (this.ceIsHideFalseData.Checked)
                 list = list.Where(m => m.UpType != UpModel.UpTypeEnum.Other).ToList();
 
             // seriesAvg.Points.AddRange(list.Select(a => AddSeriesPointChart(a, a.Index, GetValue(a, rowX.Id, valueTypeId))).ToArray());
@@ -806,5 +778,7 @@ namespace WindowsFormsApp1
             // ((XYDiagram)chart.Diagram).SecondaryAxesY.Add(myAxisY);
             // ((LineSeriesView)seriesTime.View).AxisY = myAxisY;
         }
+
+        #endregion
     }
 }

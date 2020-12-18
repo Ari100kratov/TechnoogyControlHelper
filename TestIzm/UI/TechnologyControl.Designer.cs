@@ -33,13 +33,13 @@
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.cbAlternativeParam = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.chartComparer = new DevExpress.XtraCharts.ChartControl();
-            this.ceIsHideOthers = new DevExpress.XtraEditors.CheckEdit();
-            this.cbAvgValues = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.chartDetail = new DevExpress.XtraCharts.ChartControl();
-            this.gcUP = new DevExpress.XtraGrid.GridControl();
-            this.gvUP = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.cbeCompare = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ccComparer = new DevExpress.XtraCharts.ChartControl();
+            this.ceIsHideFalseData = new DevExpress.XtraEditors.CheckEdit();
+            this.ceAvg = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ccAnalysis = new DevExpress.XtraCharts.ChartControl();
+            this.gcFileUp = new DevExpress.XtraGrid.GridControl();
+            this.gvFileUp = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -53,7 +53,7 @@
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.ccMain = new DevExpress.XtraCharts.ChartControl();
             this.chartPie = new DevExpress.XtraCharts.ChartControl();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -62,53 +62,53 @@
             this.teMaxCount = new DevExpress.XtraEditors.TextEdit();
             this.teMax = new DevExpress.XtraEditors.TextEdit();
             this.teMin = new DevExpress.XtraEditors.TextEdit();
-            this.leMachineParam = new DevExpress.XtraEditors.LookUpEdit();
-            this.leMachine = new DevExpress.XtraEditors.LookUpEdit();
+            this.lueFirstMachineParam = new DevExpress.XtraEditors.LookUpEdit();
+            this.lueMachine = new DevExpress.XtraEditors.LookUpEdit();
             this.sbLevel = new DevExpress.XtraEditors.SimpleButton();
             this.teMax2 = new DevExpress.XtraEditors.TextEdit();
             this.teMin2 = new DevExpress.XtraEditors.TextEdit();
             this.teMax1 = new DevExpress.XtraEditors.TextEdit();
             this.teMin1 = new DevExpress.XtraEditors.TextEdit();
-            this.lcSbLoad = new DevExpress.XtraEditors.SimpleButton();
-            this.teTimeTo = new DevExpress.XtraEditors.TimeEdit();
-            this.teTimeFrom = new DevExpress.XtraEditors.TimeEdit();
-            this.dtToDate = new DevExpress.XtraEditors.DateEdit();
-            this.dtFromDate = new DevExpress.XtraEditors.DateEdit();
+            this.sbLoad = new DevExpress.XtraEditors.SimpleButton();
+            this.teTo = new DevExpress.XtraEditors.TimeEdit();
+            this.teFrom = new DevExpress.XtraEditors.TimeEdit();
+            this.deTo = new DevExpress.XtraEditors.DateEdit();
+            this.deFrom = new DevExpress.XtraEditors.DateEdit();
             this.teMiniOperation = new DevExpress.XtraEditors.ButtonEdit();
             this.teUp = new DevExpress.XtraEditors.ButtonEdit();
             this.teState = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.leNextMachineParam = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbVisuals = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.ccbeAdditionalParam = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.lueSecondMachineParam = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.УП = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lcgFilter = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.lciMachine = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciFirstMachineParam = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.С = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.lciLoad = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciDateFrom = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciTime = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciDateTo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciTimeTo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciSecondMachineParam = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tcgMain = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.lcgMainChart = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.lciFIleUp = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lcgAnalysis = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem25 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciAnalysisChart = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciAvg = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem27 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciHideFalseData = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciCompare = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lciAdditionalParam = new DevExpress.XtraLayout.LayoutControlItem();
             this.lcgOtcl = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -134,14 +134,14 @@
             this.layoutControlItem31 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbAlternativeParam.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartComparer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceIsHideOthers.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbAvgValues.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDetail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcUP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvUP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbeCompare.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccComparer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceIsHideFalseData.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceAvg.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccAnalysis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcFileUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvFileUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartPie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
@@ -150,53 +150,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.teMaxCount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMax.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMin.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leMachineParam.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leMachine.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueFirstMachineParam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueMachine.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMax2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMin2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMax1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMin1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teTimeTo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teTimeFrom.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtToDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtToDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtFromDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtFromDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teTo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teFrom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTo.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFrom.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFrom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMiniOperation.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teUp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teState.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leNextMachineParam.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbVisuals.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccbeAdditionalParam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueSecondMachineParam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.УП)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgFilter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciMachine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciFirstMachineParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.С)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciDateFrom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciDateTo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTimeTo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciSecondMachineParam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcgMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgMainChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciFIleUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgAnalysis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciAnalysisChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciAvg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciHideFalseData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciCompare)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciAdditionalParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgOtcl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
@@ -222,14 +222,13 @@
             // 
             // layoutControl1
             // 
-            resources.ApplyResources(this.layoutControl1, "layoutControl1");
-            this.layoutControl1.Controls.Add(this.cbAlternativeParam);
-            this.layoutControl1.Controls.Add(this.chartComparer);
-            this.layoutControl1.Controls.Add(this.ceIsHideOthers);
-            this.layoutControl1.Controls.Add(this.cbAvgValues);
-            this.layoutControl1.Controls.Add(this.chartDetail);
-            this.layoutControl1.Controls.Add(this.gcUP);
-            this.layoutControl1.Controls.Add(this.chartControl1);
+            this.layoutControl1.Controls.Add(this.cbeCompare);
+            this.layoutControl1.Controls.Add(this.ccComparer);
+            this.layoutControl1.Controls.Add(this.ceIsHideFalseData);
+            this.layoutControl1.Controls.Add(this.ceAvg);
+            this.layoutControl1.Controls.Add(this.ccAnalysis);
+            this.layoutControl1.Controls.Add(this.gcFileUp);
+            this.layoutControl1.Controls.Add(this.ccMain);
             this.layoutControl1.Controls.Add(this.chartPie);
             this.layoutControl1.Controls.Add(this.simpleButton2);
             this.layoutControl1.Controls.Add(this.simpleButton1);
@@ -238,23 +237,24 @@
             this.layoutControl1.Controls.Add(this.teMaxCount);
             this.layoutControl1.Controls.Add(this.teMax);
             this.layoutControl1.Controls.Add(this.teMin);
-            this.layoutControl1.Controls.Add(this.leMachineParam);
-            this.layoutControl1.Controls.Add(this.leMachine);
+            this.layoutControl1.Controls.Add(this.lueFirstMachineParam);
+            this.layoutControl1.Controls.Add(this.lueMachine);
             this.layoutControl1.Controls.Add(this.sbLevel);
             this.layoutControl1.Controls.Add(this.teMax2);
             this.layoutControl1.Controls.Add(this.teMin2);
             this.layoutControl1.Controls.Add(this.teMax1);
             this.layoutControl1.Controls.Add(this.teMin1);
-            this.layoutControl1.Controls.Add(this.lcSbLoad);
-            this.layoutControl1.Controls.Add(this.teTimeTo);
-            this.layoutControl1.Controls.Add(this.teTimeFrom);
-            this.layoutControl1.Controls.Add(this.dtToDate);
-            this.layoutControl1.Controls.Add(this.dtFromDate);
+            this.layoutControl1.Controls.Add(this.sbLoad);
+            this.layoutControl1.Controls.Add(this.teTo);
+            this.layoutControl1.Controls.Add(this.teFrom);
+            this.layoutControl1.Controls.Add(this.deTo);
+            this.layoutControl1.Controls.Add(this.deFrom);
             this.layoutControl1.Controls.Add(this.teMiniOperation);
             this.layoutControl1.Controls.Add(this.teUp);
             this.layoutControl1.Controls.Add(this.teState);
-            this.layoutControl1.Controls.Add(this.leNextMachineParam);
-            this.layoutControl1.Controls.Add(this.cbVisuals);
+            this.layoutControl1.Controls.Add(this.ccbeAdditionalParam);
+            this.layoutControl1.Controls.Add(this.lueSecondMachineParam);
+            resources.ApplyResources(this.layoutControl1, "layoutControl1");
             this.layoutControl1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem9,
             this.УП,
@@ -264,90 +264,69 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(904, 91, 923, 491);
             this.layoutControl1.Root = this.layoutControlGroup1;
             // 
-            // cbAlternativeParam
+            // cbeCompare
             // 
-            resources.ApplyResources(this.cbAlternativeParam, "cbAlternativeParam");
-            this.cbAlternativeParam.Name = "cbAlternativeParam";
-            this.cbAlternativeParam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cbAlternativeParam.Properties.Buttons"))))});
-            this.cbAlternativeParam.Properties.Items.AddRange(new object[] {
-            resources.GetString("cbAlternativeParam.Properties.Items"),
-            resources.GetString("cbAlternativeParam.Properties.Items1"),
-            resources.GetString("cbAlternativeParam.Properties.Items2")});
-            this.cbAlternativeParam.StyleController = this.layoutControl1;
-            this.cbAlternativeParam.SelectedIndexChanged += new System.EventHandler(this.cbAlternativeParam_SelectedIndexChanged);
+            resources.ApplyResources(this.cbeCompare, "cbeCompare");
+            this.cbeCompare.Name = "cbeCompare";
+            this.cbeCompare.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cbeCompare.Properties.Buttons"))))});
+            this.cbeCompare.Properties.Items.AddRange(new object[] {
+            resources.GetString("cbeCompare.Properties.Items"),
+            resources.GetString("cbeCompare.Properties.Items1"),
+            resources.GetString("cbeCompare.Properties.Items2")});
+            this.cbeCompare.StyleController = this.layoutControl1;
+            this.cbeCompare.SelectedIndexChanged += new System.EventHandler(this.AnalysisChanged);
             // 
-            // chartComparer
+            // ccComparer
             // 
-            resources.ApplyResources(this.chartComparer, "chartComparer");
-            this.chartComparer.Legend.Name = "Default Legend";
-            this.chartComparer.Name = "chartComparer";
-            this.chartComparer.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.ccComparer.Legend.Name = "Default Legend";
+            resources.ApplyResources(this.ccComparer, "ccComparer");
+            this.ccComparer.Name = "ccComparer";
+            this.ccComparer.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             // 
-            // ceIsHideOthers
+            // ceIsHideFalseData
             // 
-            resources.ApplyResources(this.ceIsHideOthers, "ceIsHideOthers");
-            this.ceIsHideOthers.Name = "ceIsHideOthers";
-            this.ceIsHideOthers.Properties.Caption = resources.GetString("ceIsHideOthers.Properties.Caption");
-            this.ceIsHideOthers.Properties.DisplayValueChecked = resources.GetString("ceIsHideOthers.Properties.DisplayValueChecked");
-            this.ceIsHideOthers.Properties.DisplayValueGrayed = resources.GetString("ceIsHideOthers.Properties.DisplayValueGrayed");
-            this.ceIsHideOthers.Properties.DisplayValueUnchecked = resources.GetString("ceIsHideOthers.Properties.DisplayValueUnchecked");
-            this.ceIsHideOthers.Properties.GlyphVerticalAlignment = ((DevExpress.Utils.VertAlignment)(resources.GetObject("ceIsHideOthers.Properties.GlyphVerticalAlignment")));
-            this.ceIsHideOthers.StyleController = this.layoutControl1;
-            this.ceIsHideOthers.CheckedChanged += new System.EventHandler(this.ceIsHideOthers_CheckedChanged);
+            resources.ApplyResources(this.ceIsHideFalseData, "ceIsHideFalseData");
+            this.ceIsHideFalseData.Name = "ceIsHideFalseData";
+            this.ceIsHideFalseData.Properties.Caption = resources.GetString("ceIsHideFalseData.Properties.Caption");
+            this.ceIsHideFalseData.StyleController = this.layoutControl1;
+            this.ceIsHideFalseData.CheckedChanged += new System.EventHandler(this.AnalysisChanged);
             // 
-            // cbAvgValues
+            // ceAvg
             // 
-            resources.ApplyResources(this.cbAvgValues, "cbAvgValues");
-            this.cbAvgValues.Name = "cbAvgValues";
-            this.cbAvgValues.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cbAvgValues.Properties.Buttons"))))});
-            this.cbAvgValues.Properties.Items.AddRange(new object[] {
-            resources.GetString("cbAvgValues.Properties.Items"),
-            resources.GetString("cbAvgValues.Properties.Items1"),
-            resources.GetString("cbAvgValues.Properties.Items2"),
-            resources.GetString("cbAvgValues.Properties.Items3")});
-            this.cbAvgValues.StyleController = this.layoutControl1;
-            this.cbAvgValues.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
+            resources.ApplyResources(this.ceAvg, "ceAvg");
+            this.ceAvg.Name = "ceAvg";
+            this.ceAvg.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("ceAvg.Properties.Buttons"))))});
+            this.ceAvg.Properties.Items.AddRange(new object[] {
+            resources.GetString("ceAvg.Properties.Items"),
+            resources.GetString("ceAvg.Properties.Items1"),
+            resources.GetString("ceAvg.Properties.Items2"),
+            resources.GetString("ceAvg.Properties.Items3")});
+            this.ceAvg.StyleController = this.layoutControl1;
+            this.ceAvg.SelectedIndexChanged += new System.EventHandler(this.AnalysisChanged);
             // 
-            // chartDetail
+            // ccAnalysis
             // 
-            resources.ApplyResources(this.chartDetail, "chartDetail");
-            this.chartDetail.Legend.AlignmentHorizontal = ((DevExpress.XtraCharts.LegendAlignmentHorizontal)(resources.GetObject("chartDetail.Legend.AlignmentHorizontal")));
-            this.chartDetail.Legend.Name = "Default Legend";
-            this.chartDetail.Name = "chartDetail";
-            this.chartDetail.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartDetail.SelectedItemsChanged += new DevExpress.XtraCharts.SelectedItemsChangedEventHandler(this.chartDetail_SelectedItemsChanged);
-            this.chartDetail.SelectedItemsChanging += new DevExpress.XtraCharts.SelectedItemsChangingEventHandler(this.chartDetail_SelectedItemsChanging);
-            this.chartDetail.QueryCursor += new DevExpress.XtraCharts.QueryCursorEventHandler(this.chartDetail_QueryCursor);
-            this.chartDetail.MouseLeave += new System.EventHandler(this.chartDetail_MouseLeave);
-            this.chartDetail.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartDetail_MouseMove);
-            this.chartDetail.Move += new System.EventHandler(this.chartDetail_Move);
+            resources.ApplyResources(this.ccAnalysis, "ccAnalysis");
+            this.ccAnalysis.Legend.AlignmentHorizontal = ((DevExpress.XtraCharts.LegendAlignmentHorizontal)(resources.GetObject("ccAnalysis.Legend.AlignmentHorizontal")));
+            this.ccAnalysis.Legend.Name = "Default Legend";
+            this.ccAnalysis.Name = "ccAnalysis";
+            this.ccAnalysis.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.ccAnalysis.SelectedItemsChanged += new DevExpress.XtraCharts.SelectedItemsChangedEventHandler(this.ccAnalysis_SelectedItemsChanged);
+            this.ccAnalysis.MouseLeave += new System.EventHandler(this.ccAnalysis_MouseLeave);
             // 
-            // gcUP
+            // gcFileUp
             // 
-            resources.ApplyResources(this.gcUP, "gcUP");
-            this.gcUP.EmbeddedNavigator.AccessibleDescription = resources.GetString("gcUP.EmbeddedNavigator.AccessibleDescription");
-            this.gcUP.EmbeddedNavigator.AccessibleName = resources.GetString("gcUP.EmbeddedNavigator.AccessibleName");
-            this.gcUP.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gcUP.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gcUP.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gcUP.EmbeddedNavigator.Anchor")));
-            this.gcUP.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gcUP.EmbeddedNavigator.BackgroundImage")));
-            this.gcUP.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gcUP.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gcUP.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gcUP.EmbeddedNavigator.ImeMode")));
-            this.gcUP.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gcUP.EmbeddedNavigator.MaximumSize")));
-            this.gcUP.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gcUP.EmbeddedNavigator.TextLocation")));
-            this.gcUP.EmbeddedNavigator.ToolTip = resources.GetString("gcUP.EmbeddedNavigator.ToolTip");
-            this.gcUP.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gcUP.EmbeddedNavigator.ToolTipIconType")));
-            this.gcUP.EmbeddedNavigator.ToolTipTitle = resources.GetString("gcUP.EmbeddedNavigator.ToolTipTitle");
-            this.gcUP.MainView = this.gvUP;
-            this.gcUP.Name = "gcUP";
-            this.gcUP.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvUP});
+            resources.ApplyResources(this.gcFileUp, "gcFileUp");
+            this.gcFileUp.MainView = this.gvFileUp;
+            this.gcFileUp.Name = "gcFileUp";
+            this.gcFileUp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvFileUp});
             // 
-            // gvUP
+            // gvFileUp
             // 
-            resources.ApplyResources(this.gvUP, "gvUP");
-            this.gvUP.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvFileUp.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
@@ -361,20 +340,17 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
-            this.gvUP.GridControl = this.gcUP;
-            this.gvUP.Name = "gvUP";
+            this.gvFileUp.GridControl = this.gcFileUp;
+            this.gvFileUp.Name = "gvFileUp";
             // 
             // gridColumn1
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.FieldName = "Id";
             this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn2
             // 
-            resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.FieldName = "WorkerId";
             this.gridColumn2.Name = "gridColumn2";
             // 
@@ -389,100 +365,79 @@
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.FieldName = "NameUP";
             this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn5
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.FieldName = "DtStart";
             this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn6
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
             this.gridColumn6.FieldName = "ВеУтв";
             this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn7
             // 
             resources.ApplyResources(this.gridColumn7, "gridColumn7");
             this.gridColumn7.FieldName = "ProcessingTime";
             this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn8
             // 
             resources.ApplyResources(this.gridColumn8, "gridColumn8");
             this.gridColumn8.FieldName = "HighSpeedTime";
             this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn9
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
             this.gridColumn9.FieldName = "MstFunction";
             this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn10
             // 
             resources.ApplyResources(this.gridColumn10, "gridColumn10");
             this.gridColumn10.FieldName = "StopTime";
             this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn11
             // 
             resources.ApplyResources(this.gridColumn11, "gridColumn11");
             this.gridColumn11.FieldName = "AvgPercentCorrectFeed";
             this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn12
             // 
             resources.ApplyResources(this.gridColumn12, "gridColumn12");
             this.gridColumn12.FieldName = "AvgPercentCorrectSpeed";
             this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gridColumn13
             // 
             resources.ApplyResources(this.gridColumn13, "gridColumn13");
             this.gridColumn13.FieldName = "ExecutionUpStatusTypeId";
             this.gridColumn13.Name = "gridColumn13";
-            this.gridColumn13.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
-            // chartControl1
+            // ccMain
             // 
-            resources.ApplyResources(this.chartControl1, "chartControl1");
-            this.chartControl1.Legend.AlignmentHorizontal = ((DevExpress.XtraCharts.LegendAlignmentHorizontal)(resources.GetObject("chartControl1.Legend.AlignmentHorizontal")));
-            this.chartControl1.Legend.Name = "Default Legend";
-            this.chartControl1.Name = "chartControl1";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chartControl1_CustomDrawCrosshair);
-            this.chartControl1.Scroll += new DevExpress.XtraCharts.ChartScrollEventHandler(this.chartControl1_Scroll);
-            this.chartControl1.Zoom += new DevExpress.XtraCharts.ChartZoomEventHandler(this.chartControl1_Zoom);
-            this.chartControl1.Click += new System.EventHandler(this.chartControl1_Click);
-            this.chartControl1.DoubleClick += new System.EventHandler(this.chartControl1_DoubleClick);
-            this.chartControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chartControl1_MouseClick);
-            this.chartControl1.Resize += new System.EventHandler(this.chartControl1_Resize);
+            resources.ApplyResources(this.ccMain, "ccMain");
+            this.ccMain.Legend.AlignmentHorizontal = ((DevExpress.XtraCharts.LegendAlignmentHorizontal)(resources.GetObject("ccMain.Legend.AlignmentHorizontal")));
+            this.ccMain.Legend.Name = "Default Legend";
+            this.ccMain.Name = "ccMain";
+            this.ccMain.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.ccMain.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.ccMain_CustomDrawCrosshair);
+            this.ccMain.Scroll += new DevExpress.XtraCharts.ChartScrollEventHandler(this.ccMain_Scroll);
+            this.ccMain.Zoom += new DevExpress.XtraCharts.ChartZoomEventHandler(this.ccMain_Zoom);
+            this.ccMain.DoubleClick += new System.EventHandler(this.ccMain_DoubleClick);
+            this.ccMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ccMain_MouseClick);
+            this.ccMain.Resize += new System.EventHandler(this.ccMain_Resize);
             // 
             // chartPie
             // 
-            resources.ApplyResources(this.chartPie, "chartPie");
             this.chartPie.Legend.Name = "Default Legend";
+            resources.ApplyResources(this.chartPie, "chartPie");
             this.chartPie.Name = "chartPie";
             resources.ApplyResources(series1, "series1");
             series1.View = pieSeriesView1;
@@ -491,17 +446,17 @@
             // 
             // simpleButton2
             // 
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
             this.simpleButton2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.StyleController = this.layoutControl1;
             // 
             // simpleButton1
             // 
-            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.StyleController = this.layoutControl1;
             // 
@@ -570,37 +525,37 @@
             this.teMin.Properties.AutoHeight = ((bool)(resources.GetObject("teMin.Properties.AutoHeight")));
             this.teMin.StyleController = this.layoutControl1;
             // 
-            // leMachineParam
+            // lueFirstMachineParam
             // 
-            resources.ApplyResources(this.leMachineParam, "leMachineParam");
-            this.leMachineParam.Name = "leMachineParam";
-            this.leMachineParam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("leMachineParam.Properties.Buttons"))))});
-            this.leMachineParam.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("leMachineParam.Properties.Columns"), resources.GetString("leMachineParam.Properties.Columns1"))});
-            this.leMachineParam.Properties.DisplayMember = "Name";
-            this.leMachineParam.Properties.ValueMember = "Id";
-            this.leMachineParam.StyleController = this.layoutControl1;
-            this.leMachineParam.EditValueChanged += new System.EventHandler(this.leMachineParam_EditValueChanged);
+            resources.ApplyResources(this.lueFirstMachineParam, "lueFirstMachineParam");
+            this.lueFirstMachineParam.Name = "lueFirstMachineParam";
+            this.lueFirstMachineParam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lueFirstMachineParam.Properties.Buttons"))))});
+            this.lueFirstMachineParam.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lueFirstMachineParam.Properties.Columns"), resources.GetString("lueFirstMachineParam.Properties.Columns1"))});
+            this.lueFirstMachineParam.Properties.DisplayMember = "NameWithCount";
+            this.lueFirstMachineParam.Properties.ValueMember = "Id";
+            this.lueFirstMachineParam.StyleController = this.layoutControl1;
+            this.lueFirstMachineParam.EditValueChanged += new System.EventHandler(this.lueFirstMachineParam_EditValueChanged);
             // 
-            // leMachine
+            // lueMachine
             // 
-            resources.ApplyResources(this.leMachine, "leMachine");
-            this.leMachine.Name = "leMachine";
-            this.leMachine.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("leMachine.Properties.Buttons"))))});
-            this.leMachine.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("leMachine.Properties.Columns"), resources.GetString("leMachine.Properties.Columns1"))});
-            this.leMachine.Properties.DisplayMember = "Name";
-            this.leMachine.Properties.ValueMember = "Id";
-            this.leMachine.StyleController = this.layoutControl1;
-            this.leMachine.EditValueChanged += new System.EventHandler(this.leMachine_EditValueChanged);
+            resources.ApplyResources(this.lueMachine, "lueMachine");
+            this.lueMachine.Name = "lueMachine";
+            this.lueMachine.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lueMachine.Properties.Buttons"))))});
+            this.lueMachine.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lueMachine.Properties.Columns"), resources.GetString("lueMachine.Properties.Columns1"))});
+            this.lueMachine.Properties.DisplayMember = "Name";
+            this.lueMachine.Properties.ValueMember = "Id";
+            this.lueMachine.StyleController = this.layoutControl1;
+            this.lueMachine.EditValueChanged += new System.EventHandler(this.lueMachine_EditValueChanged);
             // 
             // sbLevel
             // 
-            resources.ApplyResources(this.sbLevel, "sbLevel");
             this.sbLevel.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("sbLevel.Appearance.Font")));
             this.sbLevel.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.sbLevel, "sbLevel");
             this.sbLevel.Name = "sbLevel";
             this.sbLevel.StyleController = this.layoutControl1;
             // 
@@ -636,57 +591,57 @@
             this.teMin1.Properties.Appearance.Options.UseBackColor = true;
             this.teMin1.StyleController = this.layoutControl1;
             // 
-            // lcSbLoad
+            // sbLoad
             // 
-            resources.ApplyResources(this.lcSbLoad, "lcSbLoad");
-            this.lcSbLoad.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lcSbLoad.Appearance.Font")));
-            this.lcSbLoad.Appearance.Options.UseFont = true;
-            this.lcSbLoad.Name = "lcSbLoad";
-            this.lcSbLoad.StyleController = this.layoutControl1;
-            this.lcSbLoad.Click += new System.EventHandler(this.sbLoad_Click);
+            this.sbLoad.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("sbLoad.Appearance.Font")));
+            this.sbLoad.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.sbLoad, "sbLoad");
+            this.sbLoad.Name = "sbLoad";
+            this.sbLoad.StyleController = this.layoutControl1;
+            this.sbLoad.Click += new System.EventHandler(this.sbLoad_Click);
             // 
-            // teTimeTo
+            // teTo
             // 
-            resources.ApplyResources(this.teTimeTo, "teTimeTo");
-            this.teTimeTo.Name = "teTimeTo";
-            this.teTimeTo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("teTimeTo.Properties.Buttons"))))});
-            this.teTimeTo.Properties.DisplayFormat.FormatString = "t";
-            this.teTimeTo.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.teTimeTo.Properties.Mask.EditMask = resources.GetString("teTimeTo.Properties.Mask.EditMask");
-            this.teTimeTo.StyleController = this.layoutControl1;
+            resources.ApplyResources(this.teTo, "teTo");
+            this.teTo.Name = "teTo";
+            this.teTo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("teTo.Properties.Buttons"))))});
+            this.teTo.Properties.DisplayFormat.FormatString = "t";
+            this.teTo.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.teTo.Properties.MaskSettings.Set("mask", "t");
+            this.teTo.StyleController = this.layoutControl1;
             // 
-            // teTimeFrom
+            // teFrom
             // 
-            resources.ApplyResources(this.teTimeFrom, "teTimeFrom");
-            this.teTimeFrom.Name = "teTimeFrom";
-            this.teTimeFrom.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("teTimeFrom.Properties.Buttons"))))});
-            this.teTimeFrom.Properties.DisplayFormat.FormatString = "t";
-            this.teTimeFrom.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.teTimeFrom.Properties.EditFormat.FormatString = "DateTime \"t\"";
-            this.teTimeFrom.Properties.Mask.EditMask = resources.GetString("teTimeFrom.Properties.Mask.EditMask");
-            this.teTimeFrom.StyleController = this.layoutControl1;
+            resources.ApplyResources(this.teFrom, "teFrom");
+            this.teFrom.Name = "teFrom";
+            this.teFrom.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("teFrom.Properties.Buttons"))))});
+            this.teFrom.Properties.DisplayFormat.FormatString = "t";
+            this.teFrom.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.teFrom.Properties.EditFormat.FormatString = "DateTime \"t\"";
+            this.teFrom.Properties.MaskSettings.Set("mask", "t");
+            this.teFrom.StyleController = this.layoutControl1;
             // 
-            // dtToDate
+            // deTo
             // 
-            resources.ApplyResources(this.dtToDate, "dtToDate");
-            this.dtToDate.Name = "dtToDate";
-            this.dtToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dtToDate.Properties.Buttons"))))});
-            this.dtToDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dtToDate.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dtToDate.StyleController = this.layoutControl1;
+            resources.ApplyResources(this.deTo, "deTo");
+            this.deTo.Name = "deTo";
+            this.deTo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("deTo.Properties.Buttons"))))});
+            this.deTo.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("deTo.Properties.CalendarTimeProperties.Buttons"))))});
+            this.deTo.StyleController = this.layoutControl1;
             // 
-            // dtFromDate
+            // deFrom
             // 
-            resources.ApplyResources(this.dtFromDate, "dtFromDate");
-            this.dtFromDate.Name = "dtFromDate";
-            this.dtFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dtFromDate.Properties.Buttons"))))});
-            this.dtFromDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dtFromDate.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dtFromDate.StyleController = this.layoutControl1;
+            resources.ApplyResources(this.deFrom, "deFrom");
+            this.deFrom.Name = "deFrom";
+            this.deFrom.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("deFrom.Properties.Buttons"))))});
+            this.deFrom.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("deFrom.Properties.CalendarTimeProperties.Buttons"))))});
+            this.deFrom.StyleController = this.layoutControl1;
             // 
             // teMiniOperation
             // 
@@ -712,46 +667,41 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("teState.Properties.Buttons"))))});
             this.teState.StyleController = this.layoutControl1;
             // 
-            // leNextMachineParam
+            // ccbeAdditionalParam
             // 
-            resources.ApplyResources(this.leNextMachineParam, "leNextMachineParam");
-            this.leNextMachineParam.Name = "leNextMachineParam";
-            this.leNextMachineParam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("leNextMachineParam.Properties.Buttons")))),
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("leNextMachineParam.Properties.Buttons1"))))});
-            this.leNextMachineParam.Properties.NullText = resources.GetString("leNextMachineParam.Properties.NullText");
-            this.leNextMachineParam.Properties.PopupSizeable = true;
-            this.leNextMachineParam.StyleController = this.layoutControl1;
-            this.leNextMachineParam.SelectedIndexChanged += new System.EventHandler(this.leNextMachineParam_SelectedIndexChanged);
-            this.leNextMachineParam.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.leNextMachineParam_ButtonClick);
-            this.leNextMachineParam.EditValueChanged += new System.EventHandler(this.leNextMachineParam_EditValueChanged);
+            resources.ApplyResources(this.ccbeAdditionalParam, "ccbeAdditionalParam");
+            this.ccbeAdditionalParam.Name = "ccbeAdditionalParam";
+            this.ccbeAdditionalParam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("ccbeAdditionalParam.Properties.Buttons"))))});
+            this.ccbeAdditionalParam.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(resources.GetString("ccbeAdditionalParam.Properties.Items"), resources.GetString("ccbeAdditionalParam.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(resources.GetString("ccbeAdditionalParam.Properties.Items2"), resources.GetString("ccbeAdditionalParam.Properties.Items3"))});
+            this.ccbeAdditionalParam.StyleController = this.layoutControl1;
+            this.ccbeAdditionalParam.EditValueChanged += new System.EventHandler(this.AnalysisChanged);
             // 
-            // cbVisuals
+            // lueSecondMachineParam
             // 
-            resources.ApplyResources(this.cbVisuals, "cbVisuals");
-            this.cbVisuals.Name = "cbVisuals";
-            this.cbVisuals.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cbVisuals.Properties.Buttons"))))});
-            this.cbVisuals.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(resources.GetString("cbVisuals.Properties.Items"), resources.GetString("cbVisuals.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(resources.GetString("cbVisuals.Properties.Items2"), resources.GetString("cbVisuals.Properties.Items3"))});
-            this.cbVisuals.StyleController = this.layoutControl1;
-            this.cbVisuals.EditValueChanged += new System.EventHandler(this.cbVisuals_EditValueChanged);
+            resources.ApplyResources(this.lueSecondMachineParam, "lueSecondMachineParam");
+            this.lueSecondMachineParam.Name = "lueSecondMachineParam";
+            this.lueSecondMachineParam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lueSecondMachineParam.Properties.Buttons"))))});
+            this.lueSecondMachineParam.Properties.DisplayMember = "NameWithCount";
+            this.lueSecondMachineParam.Properties.ValueMember = "Id";
+            this.lueSecondMachineParam.StyleController = this.layoutControl1;
             // 
             // layoutControlItem9
             // 
-            resources.ApplyResources(this.layoutControlItem9, "layoutControlItem9");
             this.layoutControlItem9.Control = this.teState;
             this.layoutControlItem9.Location = new System.Drawing.Point(711, 24);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(461, 24);
+            resources.ApplyResources(this.layoutControlItem9, "layoutControlItem9");
             this.layoutControlItem9.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(54, 13);
             this.layoutControlItem9.TextToControlDistance = 5;
             // 
             // УП
             // 
-            resources.ApplyResources(this.УП, "УП");
             this.УП.Control = this.teUp;
             this.УП.Location = new System.Drawing.Point(356, 24);
             this.УП.Name = "УП";
@@ -762,11 +712,11 @@
             // 
             // layoutControlItem8
             // 
-            resources.ApplyResources(this.layoutControlItem8, "layoutControlItem8");
             this.layoutControlItem8.Control = this.teMiniOperation;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(1172, 24);
+            resources.ApplyResources(this.layoutControlItem8, "layoutControlItem8");
             this.layoutControlItem8.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem8.TextSize = new System.Drawing.Size(73, 13);
             this.layoutControlItem8.TextToControlDistance = 5;
@@ -783,53 +733,53 @@
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2,
-            this.tabbedControlGroup1,
-            this.layoutControlGroup9,
+            this.lcgFilter,
+            this.tcgMain,
+            this.lcgAnalysis,
             this.splitterItem1});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(1216, 856);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // layoutControlGroup2
+            // lcgFilter
             // 
-            this.layoutControlGroup2.ExpandButtonVisible = true;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem16,
-            this.layoutControlItem6,
+            this.lcgFilter.ExpandButtonVisible = true;
+            this.lcgFilter.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.lciMachine,
+            this.lciFirstMachineParam,
             this.emptySpaceItem2,
-            this.layoutControlItem1,
-            this.С,
-            this.layoutControlItem3,
-            this.layoutControlItem2,
-            this.layoutControlItem4,
-            this.layoutControlItem28});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1196, 95);
-            resources.ApplyResources(this.layoutControlGroup2, "layoutControlGroup2");
+            this.lciLoad,
+            this.lciDateFrom,
+            this.lciTime,
+            this.lciDateTo,
+            this.lciTimeTo,
+            this.lciSecondMachineParam});
+            this.lcgFilter.Location = new System.Drawing.Point(0, 0);
+            this.lcgFilter.Name = "lcgFilter";
+            this.lcgFilter.Size = new System.Drawing.Size(1196, 95);
+            resources.ApplyResources(this.lcgFilter, "lcgFilter");
             // 
-            // layoutControlItem16
+            // lciMachine
             // 
-            resources.ApplyResources(this.layoutControlItem16, "layoutControlItem16");
-            this.layoutControlItem16.Control = this.leMachine;
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(533, 24);
-            this.layoutControlItem16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(37, 13);
-            this.layoutControlItem16.TextToControlDistance = 5;
+            this.lciMachine.Control = this.lueMachine;
+            this.lciMachine.Location = new System.Drawing.Point(0, 0);
+            this.lciMachine.Name = "lciMachine";
+            this.lciMachine.Size = new System.Drawing.Size(386, 24);
+            resources.ApplyResources(this.lciMachine, "lciMachine");
+            this.lciMachine.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciMachine.TextSize = new System.Drawing.Size(37, 13);
+            this.lciMachine.TextToControlDistance = 5;
             // 
-            // layoutControlItem6
+            // lciFirstMachineParam
             // 
-            resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Control = this.leMachineParam;
-            this.layoutControlItem6.Location = new System.Drawing.Point(533, 0);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(347, 24);
-            this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(49, 13);
-            this.layoutControlItem6.TextToControlDistance = 5;
+            this.lciFirstMachineParam.Control = this.lueFirstMachineParam;
+            this.lciFirstMachineParam.Location = new System.Drawing.Point(386, 0);
+            this.lciFirstMachineParam.Name = "lciFirstMachineParam";
+            this.lciFirstMachineParam.Size = new System.Drawing.Size(382, 24);
+            resources.ApplyResources(this.lciFirstMachineParam, "lciFirstMachineParam");
+            this.lciFirstMachineParam.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciFirstMachineParam.TextSize = new System.Drawing.Size(49, 13);
+            this.lciFirstMachineParam.TextToControlDistance = 5;
             // 
             // emptySpaceItem2
             // 
@@ -839,108 +789,103 @@
             this.emptySpaceItem2.Size = new System.Drawing.Size(625, 26);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem1
+            // lciLoad
             // 
-            resources.ApplyResources(this.layoutControlItem1, "layoutControlItem1");
-            this.layoutControlItem1.Control = this.lcSbLoad;
-            this.layoutControlItem1.Location = new System.Drawing.Point(1027, 24);
-            this.layoutControlItem1.MaxSize = new System.Drawing.Size(145, 26);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(145, 26);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(145, 26);
-            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.lciLoad.Control = this.sbLoad;
+            this.lciLoad.Location = new System.Drawing.Point(1027, 24);
+            this.lciLoad.MaxSize = new System.Drawing.Size(145, 26);
+            this.lciLoad.MinSize = new System.Drawing.Size(145, 26);
+            this.lciLoad.Name = "lciLoad";
+            this.lciLoad.Size = new System.Drawing.Size(145, 26);
+            this.lciLoad.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciLoad.TextSize = new System.Drawing.Size(0, 0);
+            this.lciLoad.TextVisible = false;
             // 
-            // С
+            // lciDateFrom
             // 
-            resources.ApplyResources(this.С, "С");
-            this.С.Control = this.dtFromDate;
-            this.С.Location = new System.Drawing.Point(0, 24);
-            this.С.MaxSize = new System.Drawing.Size(159, 26);
-            this.С.MinSize = new System.Drawing.Size(159, 26);
-            this.С.Name = "С";
-            this.С.Size = new System.Drawing.Size(159, 26);
-            this.С.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.С.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.С.TextSize = new System.Drawing.Size(46, 13);
-            this.С.TextToControlDistance = 5;
+            this.lciDateFrom.Control = this.deFrom;
+            this.lciDateFrom.Location = new System.Drawing.Point(0, 24);
+            this.lciDateFrom.MaxSize = new System.Drawing.Size(159, 26);
+            this.lciDateFrom.MinSize = new System.Drawing.Size(159, 26);
+            this.lciDateFrom.Name = "lciDateFrom";
+            this.lciDateFrom.Size = new System.Drawing.Size(159, 26);
+            this.lciDateFrom.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.lciDateFrom, "lciDateFrom");
+            this.lciDateFrom.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciDateFrom.TextSize = new System.Drawing.Size(46, 13);
+            this.lciDateFrom.TextToControlDistance = 5;
             // 
-            // layoutControlItem3
+            // lciTime
             // 
-            resources.ApplyResources(this.layoutControlItem3, "layoutControlItem3");
-            this.layoutControlItem3.Control = this.teTimeFrom;
-            this.layoutControlItem3.Location = new System.Drawing.Point(159, 24);
-            this.layoutControlItem3.MaxSize = new System.Drawing.Size(54, 26);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(54, 26);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(54, 26);
-            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
+            this.lciTime.Control = this.teFrom;
+            this.lciTime.Location = new System.Drawing.Point(159, 24);
+            this.lciTime.MaxSize = new System.Drawing.Size(54, 26);
+            this.lciTime.MinSize = new System.Drawing.Size(54, 26);
+            this.lciTime.Name = "lciTime";
+            this.lciTime.Size = new System.Drawing.Size(54, 26);
+            this.lciTime.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciTime.TextSize = new System.Drawing.Size(0, 0);
+            this.lciTime.TextVisible = false;
             // 
-            // layoutControlItem2
+            // lciDateTo
             // 
-            resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
-            this.layoutControlItem2.Control = this.dtToDate;
-            this.layoutControlItem2.Location = new System.Drawing.Point(213, 24);
-            this.layoutControlItem2.MaxSize = new System.Drawing.Size(112, 26);
-            this.layoutControlItem2.MinSize = new System.Drawing.Size(112, 26);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(112, 26);
-            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem2.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(12, 13);
-            this.layoutControlItem2.TextToControlDistance = 5;
+            this.lciDateTo.Control = this.deTo;
+            this.lciDateTo.Location = new System.Drawing.Point(213, 24);
+            this.lciDateTo.MaxSize = new System.Drawing.Size(112, 26);
+            this.lciDateTo.MinSize = new System.Drawing.Size(112, 26);
+            this.lciDateTo.Name = "lciDateTo";
+            this.lciDateTo.Size = new System.Drawing.Size(112, 26);
+            this.lciDateTo.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.lciDateTo, "lciDateTo");
+            this.lciDateTo.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciDateTo.TextSize = new System.Drawing.Size(12, 13);
+            this.lciDateTo.TextToControlDistance = 5;
             // 
-            // layoutControlItem4
+            // lciTimeTo
             // 
-            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
-            this.layoutControlItem4.Control = this.teTimeTo;
-            this.layoutControlItem4.Location = new System.Drawing.Point(325, 24);
-            this.layoutControlItem4.MaxSize = new System.Drawing.Size(77, 26);
-            this.layoutControlItem4.MinSize = new System.Drawing.Size(77, 26);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(77, 26);
-            this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
+            this.lciTimeTo.Control = this.teTo;
+            this.lciTimeTo.Location = new System.Drawing.Point(325, 24);
+            this.lciTimeTo.MaxSize = new System.Drawing.Size(77, 26);
+            this.lciTimeTo.MinSize = new System.Drawing.Size(77, 26);
+            this.lciTimeTo.Name = "lciTimeTo";
+            this.lciTimeTo.Size = new System.Drawing.Size(77, 26);
+            this.lciTimeTo.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciTimeTo.TextSize = new System.Drawing.Size(0, 0);
+            this.lciTimeTo.TextVisible = false;
             // 
-            // layoutControlItem28
+            // lciSecondMachineParam
             // 
-            resources.ApplyResources(this.layoutControlItem28, "layoutControlItem28");
-            this.layoutControlItem28.Control = this.leNextMachineParam;
-            this.layoutControlItem28.Location = new System.Drawing.Point(880, 0);
-            this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(292, 24);
-            this.layoutControlItem28.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem28.TextSize = new System.Drawing.Size(87, 13);
-            this.layoutControlItem28.TextToControlDistance = 5;
+            this.lciSecondMachineParam.Control = this.lueSecondMachineParam;
+            this.lciSecondMachineParam.Location = new System.Drawing.Point(768, 0);
+            this.lciSecondMachineParam.Name = "lciSecondMachineParam";
+            this.lciSecondMachineParam.Size = new System.Drawing.Size(404, 24);
+            resources.ApplyResources(this.lciSecondMachineParam, "lciSecondMachineParam");
+            this.lciSecondMachineParam.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciSecondMachineParam.TextSize = new System.Drawing.Size(87, 13);
+            this.lciSecondMachineParam.TextToControlDistance = 5;
             // 
-            // tabbedControlGroup1
+            // tcgMain
             // 
-            resources.ApplyResources(this.tabbedControlGroup1, "tabbedControlGroup1");
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 95);
-            this.tabbedControlGroup1.Name = "tabbedControlGroup1";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup4;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1196, 299);
-            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup4,
+            this.tcgMain.Location = new System.Drawing.Point(0, 95);
+            this.tcgMain.Name = "tcgMain";
+            this.tcgMain.SelectedTabPage = this.lcgMainChart;
+            this.tcgMain.Size = new System.Drawing.Size(1196, 299);
+            this.tcgMain.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.lcgMainChart,
             this.layoutControlGroup8});
             // 
-            // layoutControlGroup4
+            // lcgMainChart
             // 
-            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.lcgMainChart.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem5});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(1172, 252);
-            resources.ApplyResources(this.layoutControlGroup4, "layoutControlGroup4");
+            this.lcgMainChart.Location = new System.Drawing.Point(0, 0);
+            this.lcgMainChart.Name = "lcgMainChart";
+            this.lcgMainChart.Size = new System.Drawing.Size(1172, 252);
+            resources.ApplyResources(this.lcgMainChart, "lcgMainChart");
             // 
             // layoutControlItem5
             // 
-            resources.ApplyResources(this.layoutControlItem5, "layoutControlItem5");
-            this.layoutControlItem5.Control = this.chartControl1;
+            this.layoutControlItem5.Control = this.ccMain;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(1172, 252);
@@ -950,35 +895,33 @@
             // layoutControlGroup8
             // 
             this.layoutControlGroup8.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem23});
+            this.lciFIleUp});
             this.layoutControlGroup8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup8.Name = "layoutControlGroup8";
             this.layoutControlGroup8.Size = new System.Drawing.Size(1172, 252);
             resources.ApplyResources(this.layoutControlGroup8, "layoutControlGroup8");
             // 
-            // layoutControlItem23
+            // lciFIleUp
             // 
-            resources.ApplyResources(this.layoutControlItem23, "layoutControlItem23");
-            this.layoutControlItem23.Control = this.gcUP;
-            this.layoutControlItem23.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem23.Name = "layoutControlItem23";
-            this.layoutControlItem23.Size = new System.Drawing.Size(1172, 252);
-            this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem23.TextVisible = false;
+            this.lciFIleUp.Control = this.gcFileUp;
+            this.lciFIleUp.Location = new System.Drawing.Point(0, 0);
+            this.lciFIleUp.Name = "lciFIleUp";
+            this.lciFIleUp.Size = new System.Drawing.Size(1172, 252);
+            this.lciFIleUp.TextSize = new System.Drawing.Size(0, 0);
+            this.lciFIleUp.TextVisible = false;
             // 
-            // layoutControlGroup9
+            // lcgAnalysis
             // 
-            this.layoutControlGroup9.ExpandButtonVisible = true;
-            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.lcgAnalysis.ExpandButtonVisible = true;
+            this.lcgAnalysis.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.tabbedControlGroup2});
-            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 404);
-            this.layoutControlGroup9.Name = "layoutControlGroup9";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(1196, 432);
-            resources.ApplyResources(this.layoutControlGroup9, "layoutControlGroup9");
+            this.lcgAnalysis.Location = new System.Drawing.Point(0, 404);
+            this.lcgAnalysis.Name = "lcgAnalysis";
+            this.lcgAnalysis.Size = new System.Drawing.Size(1196, 432);
+            resources.ApplyResources(this.lcgAnalysis, "lcgAnalysis");
             // 
             // tabbedControlGroup2
             // 
-            resources.ApplyResources(this.tabbedControlGroup2, "tabbedControlGroup2");
             this.tabbedControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.tabbedControlGroup2.Name = "tabbedControlGroup2";
             this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup3;
@@ -990,38 +933,37 @@
             // layoutControlGroup3
             // 
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem25,
-            this.layoutControlItem26,
+            this.lciAnalysisChart,
+            this.lciAvg,
             this.emptySpaceItem1,
-            this.layoutControlItem27,
+            this.lciHideFalseData,
             this.layoutControlItem24,
-            this.layoutControlItem29,
-            this.layoutControlItem30});
+            this.lciCompare,
+            this.lciAdditionalParam});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(1148, 340);
             resources.ApplyResources(this.layoutControlGroup3, "layoutControlGroup3");
             // 
-            // layoutControlItem25
+            // lciAnalysisChart
             // 
-            resources.ApplyResources(this.layoutControlItem25, "layoutControlItem25");
-            this.layoutControlItem25.Control = this.chartDetail;
-            this.layoutControlItem25.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem25.Name = "layoutControlItem25";
-            this.layoutControlItem25.Size = new System.Drawing.Size(815, 316);
-            this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem25.TextVisible = false;
+            this.lciAnalysisChart.Control = this.ccAnalysis;
+            this.lciAnalysisChart.Location = new System.Drawing.Point(0, 24);
+            this.lciAnalysisChart.Name = "lciAnalysisChart";
+            this.lciAnalysisChart.Size = new System.Drawing.Size(815, 316);
+            this.lciAnalysisChart.TextSize = new System.Drawing.Size(0, 0);
+            this.lciAnalysisChart.TextVisible = false;
             // 
-            // layoutControlItem26
+            // lciAvg
             // 
-            resources.ApplyResources(this.layoutControlItem26, "layoutControlItem26");
-            this.layoutControlItem26.Control = this.cbAvgValues;
-            this.layoutControlItem26.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem26.Name = "layoutControlItem26";
-            this.layoutControlItem26.Size = new System.Drawing.Size(195, 24);
-            this.layoutControlItem26.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem26.TextSize = new System.Drawing.Size(65, 13);
-            this.layoutControlItem26.TextToControlDistance = 5;
+            this.lciAvg.Control = this.ceAvg;
+            this.lciAvg.Location = new System.Drawing.Point(0, 0);
+            this.lciAvg.Name = "lciAvg";
+            this.lciAvg.Size = new System.Drawing.Size(195, 24);
+            resources.ApplyResources(this.lciAvg, "lciAvg");
+            this.lciAvg.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciAvg.TextSize = new System.Drawing.Size(65, 13);
+            this.lciAvg.TextToControlDistance = 5;
             // 
             // emptySpaceItem1
             // 
@@ -1031,23 +973,21 @@
             this.emptySpaceItem1.Size = new System.Drawing.Size(343, 24);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem27
+            // lciHideFalseData
             // 
-            resources.ApplyResources(this.layoutControlItem27, "layoutControlItem27");
-            this.layoutControlItem27.Control = this.ceIsHideOthers;
-            this.layoutControlItem27.Location = new System.Drawing.Point(195, 0);
-            this.layoutControlItem27.MaxSize = new System.Drawing.Size(109, 24);
-            this.layoutControlItem27.MinSize = new System.Drawing.Size(109, 24);
-            this.layoutControlItem27.Name = "layoutControlItem27";
-            this.layoutControlItem27.Size = new System.Drawing.Size(109, 24);
-            this.layoutControlItem27.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem27.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem27.TextVisible = false;
+            this.lciHideFalseData.Control = this.ceIsHideFalseData;
+            this.lciHideFalseData.Location = new System.Drawing.Point(195, 0);
+            this.lciHideFalseData.MaxSize = new System.Drawing.Size(109, 24);
+            this.lciHideFalseData.MinSize = new System.Drawing.Size(109, 24);
+            this.lciHideFalseData.Name = "lciHideFalseData";
+            this.lciHideFalseData.Size = new System.Drawing.Size(109, 24);
+            this.lciHideFalseData.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.lciHideFalseData.TextSize = new System.Drawing.Size(0, 0);
+            this.lciHideFalseData.TextVisible = false;
             // 
             // layoutControlItem24
             // 
-            resources.ApplyResources(this.layoutControlItem24, "layoutControlItem24");
-            this.layoutControlItem24.Control = this.chartComparer;
+            this.layoutControlItem24.Control = this.ccComparer;
             this.layoutControlItem24.Location = new System.Drawing.Point(815, 24);
             this.layoutControlItem24.Name = "layoutControlItem24";
             this.layoutControlItem24.Size = new System.Drawing.Size(333, 316);
@@ -1055,28 +995,28 @@
             this.layoutControlItem24.TextVisible = false;
             this.layoutControlItem24.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
-            // layoutControlItem29
+            // lciCompare
             // 
-            resources.ApplyResources(this.layoutControlItem29, "layoutControlItem29");
-            this.layoutControlItem29.Control = this.cbAlternativeParam;
-            this.layoutControlItem29.Location = new System.Drawing.Point(882, 0);
-            this.layoutControlItem29.Name = "layoutControlItem29";
-            this.layoutControlItem29.Size = new System.Drawing.Size(266, 24);
-            this.layoutControlItem29.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem29.TextSize = new System.Drawing.Size(55, 13);
-            this.layoutControlItem29.TextToControlDistance = 5;
-            this.layoutControlItem29.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            this.lciCompare.Control = this.cbeCompare;
+            this.lciCompare.Location = new System.Drawing.Point(882, 0);
+            this.lciCompare.Name = "lciCompare";
+            this.lciCompare.Size = new System.Drawing.Size(266, 24);
+            resources.ApplyResources(this.lciCompare, "lciCompare");
+            this.lciCompare.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciCompare.TextSize = new System.Drawing.Size(55, 13);
+            this.lciCompare.TextToControlDistance = 5;
+            this.lciCompare.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
-            // layoutControlItem30
+            // lciAdditionalParam
             // 
-            resources.ApplyResources(this.layoutControlItem30, "layoutControlItem30");
-            this.layoutControlItem30.Control = this.cbVisuals;
-            this.layoutControlItem30.Location = new System.Drawing.Point(304, 0);
-            this.layoutControlItem30.Name = "layoutControlItem30";
-            this.layoutControlItem30.Size = new System.Drawing.Size(235, 24);
-            this.layoutControlItem30.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem30.TextSize = new System.Drawing.Size(79, 13);
-            this.layoutControlItem30.TextToControlDistance = 5;
+            this.lciAdditionalParam.Control = this.ccbeAdditionalParam;
+            this.lciAdditionalParam.Location = new System.Drawing.Point(304, 0);
+            this.lciAdditionalParam.Name = "lciAdditionalParam";
+            this.lciAdditionalParam.Size = new System.Drawing.Size(235, 24);
+            resources.ApplyResources(this.lciAdditionalParam, "lciAdditionalParam");
+            this.lciAdditionalParam.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lciAdditionalParam.TextSize = new System.Drawing.Size(79, 13);
+            this.lciAdditionalParam.TextToControlDistance = 5;
             // 
             // lcgOtcl
             // 
@@ -1096,7 +1036,6 @@
             // 
             // layoutControlItem20
             // 
-            resources.ApplyResources(this.layoutControlItem20, "layoutControlItem20");
             this.layoutControlItem20.Control = this.teNorm;
             this.layoutControlItem20.Location = new System.Drawing.Point(560, 115);
             this.layoutControlItem20.MaxSize = new System.Drawing.Size(0, 135);
@@ -1104,12 +1043,12 @@
             this.layoutControlItem20.Name = "layoutControlItem20";
             this.layoutControlItem20.Size = new System.Drawing.Size(128, 135);
             this.layoutControlItem20.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem20, "layoutControlItem20");
             this.layoutControlItem20.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem20.TextSize = new System.Drawing.Size(116, 13);
             // 
             // layoutControlItem21
             // 
-            resources.ApplyResources(this.layoutControlItem21, "layoutControlItem21");
             this.layoutControlItem21.Control = this.simpleButton1;
             this.layoutControlItem21.Location = new System.Drawing.Point(0, 250);
             this.layoutControlItem21.MaxSize = new System.Drawing.Size(0, 90);
@@ -1122,7 +1061,6 @@
             // 
             // layoutControlItem22
             // 
-            resources.ApplyResources(this.layoutControlItem22, "layoutControlItem22");
             this.layoutControlItem22.Control = this.simpleButton2;
             this.layoutControlItem22.Location = new System.Drawing.Point(339, 250);
             this.layoutControlItem22.MaxSize = new System.Drawing.Size(0, 90);
@@ -1135,7 +1073,6 @@
             // 
             // layoutControlItem14
             // 
-            resources.ApplyResources(this.layoutControlItem14, "layoutControlItem14");
             this.layoutControlItem14.Control = this.chartPie;
             this.layoutControlItem14.Location = new System.Drawing.Point(688, 115);
             this.layoutControlItem14.MaxSize = new System.Drawing.Size(0, 225);
@@ -1158,8 +1095,8 @@
             // 
             // layoutControlItem7
             // 
-            resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
             this.layoutControlItem7.Control = this.teMin;
+            resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(128, 90);
             this.layoutControlItem7.Name = "layoutControlItem7";
@@ -1170,13 +1107,13 @@
             // 
             // layoutControlItem19
             // 
-            resources.ApplyResources(this.layoutControlItem19, "layoutControlItem19");
             this.layoutControlItem19.Control = this.teMinCount;
             this.layoutControlItem19.Location = new System.Drawing.Point(128, 0);
             this.layoutControlItem19.MinSize = new System.Drawing.Size(128, 40);
             this.layoutControlItem19.Name = "layoutControlItem19";
             this.layoutControlItem19.Size = new System.Drawing.Size(128, 90);
             this.layoutControlItem19.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem19, "layoutControlItem19");
             this.layoutControlItem19.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem19.TextSize = new System.Drawing.Size(116, 13);
             // 
@@ -1192,25 +1129,25 @@
             // 
             // layoutControlItem18
             // 
-            resources.ApplyResources(this.layoutControlItem18, "layoutControlItem18");
             this.layoutControlItem18.Control = this.teMaxCount;
             this.layoutControlItem18.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem18.MinSize = new System.Drawing.Size(128, 40);
             this.layoutControlItem18.Name = "layoutControlItem18";
             this.layoutControlItem18.Size = new System.Drawing.Size(128, 90);
             this.layoutControlItem18.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem18, "layoutControlItem18");
             this.layoutControlItem18.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem18.TextSize = new System.Drawing.Size(116, 13);
             // 
             // layoutControlItem17
             // 
-            resources.ApplyResources(this.layoutControlItem17, "layoutControlItem17");
             this.layoutControlItem17.Control = this.teMax;
             this.layoutControlItem17.Location = new System.Drawing.Point(128, 0);
             this.layoutControlItem17.MinSize = new System.Drawing.Size(128, 90);
             this.layoutControlItem17.Name = "layoutControlItem17";
             this.layoutControlItem17.Size = new System.Drawing.Size(128, 90);
             this.layoutControlItem17.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem17, "layoutControlItem17");
             this.layoutControlItem17.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem17.TextSize = new System.Drawing.Size(116, 13);
             // 
@@ -1230,7 +1167,6 @@
             // 
             // layoutControlItem10
             // 
-            resources.ApplyResources(this.layoutControlItem10, "layoutControlItem10");
             this.layoutControlItem10.Control = this.teMin1;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.MaxSize = new System.Drawing.Size(151, 26);
@@ -1238,13 +1174,13 @@
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(151, 26);
             this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem10, "layoutControlItem10");
             this.layoutControlItem10.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem10.TextSize = new System.Drawing.Size(66, 13);
             this.layoutControlItem10.TextToControlDistance = 5;
             // 
             // layoutControlItem11
             // 
-            resources.ApplyResources(this.layoutControlItem11, "layoutControlItem11");
             this.layoutControlItem11.Control = this.teMax1;
             this.layoutControlItem11.Location = new System.Drawing.Point(151, 0);
             this.layoutControlItem11.MaxSize = new System.Drawing.Size(105, 26);
@@ -1252,13 +1188,13 @@
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(105, 26);
             this.layoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem11, "layoutControlItem11");
             this.layoutControlItem11.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem11.TextSize = new System.Drawing.Size(20, 13);
             this.layoutControlItem11.TextToControlDistance = 5;
             // 
             // layoutControlItem12
             // 
-            resources.ApplyResources(this.layoutControlItem12, "layoutControlItem12");
             this.layoutControlItem12.Control = this.teMin2;
             this.layoutControlItem12.Location = new System.Drawing.Point(256, 0);
             this.layoutControlItem12.MaxSize = new System.Drawing.Size(102, 26);
@@ -1266,13 +1202,13 @@
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(102, 26);
             this.layoutControlItem12.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem12, "layoutControlItem12");
             this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem12.TextSize = new System.Drawing.Size(16, 13);
             this.layoutControlItem12.TextToControlDistance = 5;
             // 
             // layoutControlItem13
             // 
-            resources.ApplyResources(this.layoutControlItem13, "layoutControlItem13");
             this.layoutControlItem13.Control = this.teMax2;
             this.layoutControlItem13.Location = new System.Drawing.Point(358, 0);
             this.layoutControlItem13.MaxSize = new System.Drawing.Size(104, 26);
@@ -1280,6 +1216,7 @@
             this.layoutControlItem13.Name = "layoutControlItem13";
             this.layoutControlItem13.Size = new System.Drawing.Size(104, 26);
             this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            resources.ApplyResources(this.layoutControlItem13, "layoutControlItem13");
             this.layoutControlItem13.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem13.TextSize = new System.Drawing.Size(20, 13);
             this.layoutControlItem13.TextToControlDistance = 5;
@@ -1294,7 +1231,6 @@
             // 
             // layoutControlItem15
             // 
-            resources.ApplyResources(this.layoutControlItem15, "layoutControlItem15");
             this.layoutControlItem15.Control = this.sbLevel;
             this.layoutControlItem15.Location = new System.Drawing.Point(462, 0);
             this.layoutControlItem15.MaxSize = new System.Drawing.Size(305, 26);
@@ -1333,7 +1269,6 @@
             // 
             // layoutControlItem31
             // 
-            resources.ApplyResources(this.layoutControlItem31, "layoutControlItem31");
             this.layoutControlItem31.Location = new System.Drawing.Point(0, 836);
             this.layoutControlItem31.Name = "layoutControlItem31";
             this.layoutControlItem31.Size = new System.Drawing.Size(1196, 25);
@@ -1349,14 +1284,14 @@
             this.Load += new System.EventHandler(this.TechnologyControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cbAlternativeParam.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartComparer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceIsHideOthers.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbAvgValues.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDetail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcUP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvUP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbeCompare.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccComparer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceIsHideFalseData.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceAvg.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccAnalysis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcFileUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvFileUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartPie)).EndInit();
@@ -1365,53 +1300,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.teMaxCount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMax.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMin.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leMachineParam.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leMachine.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueFirstMachineParam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueMachine.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMax2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMin2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMax1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMin1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teTimeTo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teTimeFrom.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtToDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtToDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtFromDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtFromDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teTo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teFrom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTo.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFrom.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deFrom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teMiniOperation.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teUp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teState.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leNextMachineParam.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbVisuals.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccbeAdditionalParam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueSecondMachineParam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.УП)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgFilter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciMachine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciFirstMachineParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.С)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciDateFrom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciDateTo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTimeTo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciSecondMachineParam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcgMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgMainChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciFIleUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgAnalysis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciAnalysisChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciAvg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciHideFalseData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciCompare)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciAdditionalParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgOtcl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
@@ -1441,17 +1376,17 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.SimpleButton lcSbLoad;
-        private DevExpress.XtraEditors.TimeEdit teTimeTo;
-        private DevExpress.XtraEditors.TimeEdit teTimeFrom;
-        private DevExpress.XtraEditors.DateEdit dtToDate;
-        private DevExpress.XtraEditors.DateEdit dtFromDate;
-        private DevExpress.XtraLayout.LayoutControlItem С;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraEditors.SimpleButton sbLoad;
+        private DevExpress.XtraEditors.TimeEdit teTo;
+        private DevExpress.XtraEditors.TimeEdit teFrom;
+        private DevExpress.XtraEditors.DateEdit deTo;
+        private DevExpress.XtraEditors.DateEdit deFrom;
+        private DevExpress.XtraLayout.LayoutControlItem lciDateFrom;
+        private DevExpress.XtraLayout.LayoutControlItem lciDateTo;
+        private DevExpress.XtraLayout.LayoutControlItem lciTime;
+        private DevExpress.XtraLayout.LayoutControlItem lciTimeTo;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem lciLoad;
         private DevExpress.XtraEditors.TextEdit teMin1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
@@ -1460,10 +1395,10 @@
         private DevExpress.XtraEditors.TextEdit teMax2;
         private DevExpress.XtraEditors.TextEdit teMin2;
         private DevExpress.XtraEditors.SimpleButton sbLevel;
-        private DevExpress.XtraEditors.LookUpEdit leMachine;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
-        private DevExpress.XtraEditors.LookUpEdit leMachineParam;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraEditors.LookUpEdit lueMachine;
+        private DevExpress.XtraLayout.LayoutControlItem lciMachine;
+        private DevExpress.XtraEditors.LookUpEdit lueFirstMachineParam;
+        private DevExpress.XtraLayout.LayoutControlItem lciFirstMachineParam;
         private DevExpress.XtraEditors.TextEdit teMinCount;
         private DevExpress.XtraEditors.TextEdit teMaxCount;
         private DevExpress.XtraEditors.TextEdit teMax;
@@ -1475,14 +1410,14 @@
         private DevExpress.XtraEditors.ButtonEdit teMiniOperation;
         private DevExpress.XtraEditors.ButtonEdit teUp;
         private DevExpress.XtraEditors.ComboBoxEdit teState;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
-        private DevExpress.XtraGrid.GridControl gcUP;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvUP;
-        private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup1;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgFilter;
+        private DevExpress.XtraCharts.ChartControl ccMain;
+        private DevExpress.XtraGrid.GridControl gcFileUp;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvFileUp;
+        private DevExpress.XtraLayout.TabbedControlGroup tcgMain;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup8;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
+        private DevExpress.XtraLayout.LayoutControlItem lciFIleUp;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgMainChart;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
@@ -1497,10 +1432,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraCharts.ChartControl chartDetail;
+        private DevExpress.XtraCharts.ChartControl ccAnalysis;
         private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup2;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem25;
+        private DevExpress.XtraLayout.LayoutControlItem lciAnalysisChart;
         private DevExpress.XtraLayout.LayoutControlGroup lcgOtcl;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
@@ -1519,26 +1454,26 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
-        private DevExpress.XtraEditors.ComboBoxEdit cbAvgValues;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
+        private DevExpress.XtraEditors.ComboBoxEdit ceAvg;
+        private DevExpress.XtraLayout.LayoutControlItem lciAvg;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraEditors.CheckEdit ceIsHideOthers;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem27;
+        private DevExpress.XtraEditors.CheckEdit ceIsHideFalseData;
+        private DevExpress.XtraLayout.LayoutControlItem lciHideFalseData;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem28;
-        private DevExpress.XtraEditors.ComboBoxEdit leNextMachineParam;
-        private DevExpress.XtraCharts.ChartControl chartComparer;
+        private DevExpress.XtraLayout.LayoutControlItem lciSecondMachineParam;
+        private DevExpress.XtraCharts.ChartControl ccComparer;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
-        private DevExpress.XtraEditors.ComboBoxEdit cbAlternativeParam;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem29;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup9;
+        private DevExpress.XtraEditors.ComboBoxEdit cbeCompare;
+        private DevExpress.XtraLayout.LayoutControlItem lciCompare;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgAnalysis;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private System.Windows.Forms.Timer tmAutoZoom;
-        private DevExpress.XtraEditors.CheckedComboBoxEdit cbVisuals;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem30;
+        private DevExpress.XtraEditors.CheckedComboBoxEdit ccbeAdditionalParam;
+        private DevExpress.XtraLayout.LayoutControlItem lciAdditionalParam;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem31;
+        private DevExpress.XtraEditors.LookUpEdit lueSecondMachineParam;
     }
 }
 

@@ -69,15 +69,15 @@ namespace WindowsFormsApp1
             {
                 var mark = new Mark(rowX.Id);
 
-                if (rowX.List.Count > 0)
+                if (rowX.SignalList.Count > 0)
                 {
-                    var avg = rowX.List.Average(a => a.Value);
+                    var avg = rowX.SignalList.Average(a => a.Value);
                     mark.Avg = avg;
-                    mark.Count = rowX.List.Count();
-                    mark.Min = rowX.List.Min(a => a.Value);
-                    mark.Max = rowX.List.Max(a => a.Value);
-                    mark.AvgDiff = rowX.List.Average(a => Math.Abs(avg - a.Value));
-                    mark.Disp = Math.Sqrt(rowX.List.Average(a => Math.Pow(avg - a.Value, 2)));
+                    mark.Count = rowX.SignalList.Count();
+                    mark.Min = rowX.SignalList.Min(a => a.Value);
+                    mark.Max = rowX.SignalList.Max(a => a.Value);
+                    mark.AvgDiff = rowX.SignalList.Average(a => Math.Abs(avg - a.Value));
+                    mark.Disp = Math.Sqrt(rowX.SignalList.Average(a => Math.Pow(avg - a.Value, 2)));
                 }
 
                 this.AllMarks.Add(mark);

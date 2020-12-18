@@ -117,1658 +117,1584 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;teTimeFrom.Name" xml:space="preserve">
-    <value>teTimeFrom</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gridColumn8.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="teMax2.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="teMin2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 561</value>
-  </data>
-  <data name="&gt;&gt;gridColumn7.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn13.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teUp.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem11.Name" xml:space="preserve">
-    <value>layoutControlItem11</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup9.Name" xml:space="preserve">
-    <value>layoutControlGroup9</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gcUP.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
-    <value>gridColumn11</value>
-  </data>
-  <data name="&gt;&gt;teMax2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chartDetail.Name" xml:space="preserve">
-    <value>chartDetail</value>
-  </data>
-  <data name="&gt;&gt;teUp.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMiniOperation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 69</value>
-  </data>
-  <data name="&gt;&gt;chartPie.Name" xml:space="preserve">
-    <value>chartPie</value>
-  </data>
-  <data name="&gt;&gt;teMin.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;splitterItem1.Name" xml:space="preserve">
-    <value>splitterItem1</value>
-  </data>
-  <data name="lcSbLoad.Text" xml:space="preserve">
-    <value>Загрузить</value>
-  </data>
-  <data name="&gt;&gt;tabbedControlGroup2.Name" xml:space="preserve">
-    <value>tabbedControlGroup2</value>
-  </data>
-  <data name="cbAlternativeParam.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cbeCompare.Location" type="System.Drawing.Point, System.Drawing">
     <value>978, 484</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn7.Name" xml:space="preserve">
-    <value>gridColumn7</value>
-  </data>
-  <data name="&gt;&gt;ceIsHideOthers.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem10.Name" xml:space="preserve">
-    <value>layoutControlItem10</value>
-  </data>
-  <data name="teMinCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 648</value>
-  </data>
-  <data name="&gt;&gt;dtFromDate.Name" xml:space="preserve">
-    <value>dtFromDate</value>
-  </data>
-  <data name="teMax2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
-  </data>
-  <data name="chartPie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 599</value>
-  </data>
-  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
-    <value>gridColumn1</value>
-  </data>
-  <data name="ceIsHideOthers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 20</value>
-  </data>
-  <data name="gridColumn13.Width" type="System.Int32, mscorlib">
-    <value>139</value>
-  </data>
-  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
-    <value>emptySpaceItem3</value>
-  </data>
-  <data name="leMachineParam.Properties.Columns1" xml:space="preserve">
-    <value>Наименование</value>
-  </data>
-  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lcSbLoad.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="layoutControlItem18.Text" xml:space="preserve">
-    <value>Часов</value>
-  </data>
-  <data name="&gt;&gt;gridColumn12.Name" xml:space="preserve">
-    <value>gridColumn12</value>
-  </data>
-  <data name="teMinCount.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 32pt</value>
-  </data>
-  <data name="teMin2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;layoutControlGroup7.Name" xml:space="preserve">
-    <value>layoutControlGroup7</value>
-  </data>
-  <data name="&gt;&gt;cbAvgValues.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="cbAvgValues.Properties.Items1" xml:space="preserve">
-    <value>DeltaAvg</value>
-  </data>
-  <data name="&gt;&gt;lcgLevels.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMin.EditValue" xml:space="preserve">
-    <value>179,1</value>
-  </data>
-  <assembly alias="DevExpress.Data.v20.2" name="DevExpress.Data.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="ceIsHideOthers.Properties.GlyphVerticalAlignment" type="DevExpress.Utils.VertAlignment, DevExpress.Data.v20.2">
-    <value>Default</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem13.Name" xml:space="preserve">
-    <value>layoutControlItem13</value>
-  </data>
-  <data name="teMaxCount.EditValue" xml:space="preserve">
-    <value>2,4</value>
-  </data>
-  <data name="dtFromDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teState.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem26.Name" xml:space="preserve">
-    <value>layoutControlItem26</value>
-  </data>
-  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem31.Name" xml:space="preserve">
-    <value>layoutControlItem31</value>
-  </data>
-  <data name="&gt;&gt;cbVisuals.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="teMax.Properties.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="lcSbLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
-  </data>
-  <data name="gridColumn6.Caption" xml:space="preserve">
-    <value>Окончание</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="dtFromDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <assembly alias="DevExpress.Utils.v20.2" name="DevExpress.Utils.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gcUP.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v20.2">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup6.Name" xml:space="preserve">
-    <value>layoutControlGroup6</value>
-  </data>
-  <data name="teMax.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 32pt</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem21.Name" xml:space="preserve">
-    <value>layoutControlItem21</value>
-  </data>
-  <data name="layoutControlGroup6.Text" xml:space="preserve">
-    <value>Незначительные</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem12.Name" xml:space="preserve">
-    <value>layoutControlItem12</value>
-  </data>
-  <data name="gcUP.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;lcgLevels.Name" xml:space="preserve">
-    <value>lcgLevels</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Контроль технологии</value>
-  </data>
-  <data name="&gt;&gt;dtFromDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem9.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem30.Name" xml:space="preserve">
-    <value>layoutControlItem30</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem29.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
-    <value>emptySpaceItem1</value>
-  </data>
-  <data name="&gt;&gt;dtToDate.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;teMax1.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;leMachineParam.Name" xml:space="preserve">
-    <value>leMachineParam</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="cbVisuals.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+  <data name="cbeCompare.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
     <value>Combo</value>
   </data>
-  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
-    <value>gridColumn4</value>
+  <data name="cbeCompare.Properties.Items" xml:space="preserve">
+    <value>Распределение времени</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem20.Name" xml:space="preserve">
-    <value>layoutControlItem20</value>
+  <data name="cbeCompare.Properties.Items1" xml:space="preserve">
+    <value>Распределение средней нагрузки</value>
   </data>
-  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
+  <data name="cbeCompare.Properties.Items2" xml:space="preserve">
+    <value>Зависимость Времени от Нагрузки</value>
+  </data>
+  <data name="cbeCompare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbeCompare.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;cbeCompare.Name" xml:space="preserve">
+    <value>cbeCompare</value>
+  </data>
+  <data name="&gt;&gt;cbeCompare.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbeCompare.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;cbeCompare.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ccComparer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>851, 508</value>
+  </data>
+  <data name="ccComparer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 312</value>
+  </data>
+  <data name="ccComparer.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;ccComparer.Name" xml:space="preserve">
+    <value>ccComparer</value>
+  </data>
+  <data name="&gt;&gt;ccComparer.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ccComparer.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ccComparer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ceIsHideFalseData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 484</value>
+  </data>
+  <data name="ceIsHideFalseData.Properties.Caption" xml:space="preserve">
+    <value>Скрыть ложные</value>
+  </data>
+  <data name="ceIsHideFalseData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="ceIsHideFalseData.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;ceIsHideFalseData.Name" xml:space="preserve">
+    <value>ceIsHideFalseData</value>
+  </data>
+  <data name="&gt;&gt;ceIsHideFalseData.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ceIsHideFalseData.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceIsHideFalseData.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ceAvg.EditValue" xml:space="preserve">
+    <value>Avg</value>
+  </data>
+  <data name="ceAvg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 484</value>
+  </data>
+  <data name="ceAvg.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="ceAvg.Properties.Items" xml:space="preserve">
+    <value>Avg</value>
+  </data>
+  <data name="ceAvg.Properties.Items1" xml:space="preserve">
+    <value>DeltaAvg</value>
+  </data>
+  <data name="ceAvg.Properties.Items2" xml:space="preserve">
+    <value>Dispersion</value>
+  </data>
+  <data name="ceAvg.Properties.Items3" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="ceAvg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="ceAvg.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;ceAvg.Name" xml:space="preserve">
+    <value>ceAvg</value>
+  </data>
+  <data name="&gt;&gt;ceAvg.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ceAvg.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceAvg.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ccAnalysis.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="DevExpress.XtraCharts.v20.2" name="DevExpress.XtraCharts.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ccAnalysis.Legend.AlignmentHorizontal" type="DevExpress.XtraCharts.LegendAlignmentHorizontal, DevExpress.XtraCharts.v20.2">
+    <value>Right</value>
+  </data>
+  <data name="ccAnalysis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 508</value>
+  </data>
+  <data name="ccAnalysis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>811, 312</value>
+  </data>
+  <data name="ccAnalysis.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;ccAnalysis.Name" xml:space="preserve">
+    <value>ccAnalysis</value>
+  </data>
+  <data name="&gt;&gt;ccAnalysis.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ccAnalysis.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ccAnalysis.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="gcFileUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 142</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>FileUpId</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>УП</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;layoutControlGroup4.Name" xml:space="preserve">
-    <value>layoutControlGroup4</value>
-  </data>
-  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMinCount.Properties.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbVisuals.EditValue" xml:space="preserve">
-    <value />
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="leNextMachineParam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>996, 45</value>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>Начало</value>
   </data>
-  <data name="teTimeTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;ceIsHideOthers.Name" xml:space="preserve">
-    <value>ceIsHideOthers</value>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>111</value>
   </data>
-  <data name="&gt;&gt;teMax1.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>Окончание</value>
   </data>
-  <data name="&gt;&gt;sbLevel.Name" xml:space="preserve">
-    <value>sbLevel</value>
+  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="chartPie.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="teUp.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="teMaxCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 70</value>
-  </data>
-  <data name="teUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>793, 20</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem23.Name" xml:space="preserve">
-    <value>layoutControlItem23</value>
-  </data>
-  <data name="gridColumn13.VisibleIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;teMin2.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;gridColumn9.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem9.Name" xml:space="preserve">
-    <value>layoutControlItem9</value>
-  </data>
-  <data name="teMax2.EditValue" xml:space="preserve">
-    <value>80</value>
-  </data>
-  <data name="teTimeFrom.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 734</value>
-  </data>
-  <data name="layoutControlItem2.Text" xml:space="preserve">
-    <value>по</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="dtToDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 69</value>
-  </data>
-  <data name="&gt;&gt;lcSbLoad.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem8.Name" xml:space="preserve">
-    <value>layoutControlItem8</value>
-  </data>
-  <data name="leMachineParam.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="leMachineParam.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="teMin.Properties.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
-    <value>gridColumn2</value>
-  </data>
-  <data name="leMachineParam.Properties.Columns" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem22.Name" xml:space="preserve">
-    <value>layoutControlItem22</value>
-  </data>
-  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teMin1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teMin2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMinCount.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="cbAlternativeParam.Properties.Items" xml:space="preserve">
-    <value>Распределение времени</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
-    <value>emptySpaceItem4</value>
-  </data>
-  <data name="layoutControlGroup7.Text" xml:space="preserve">
-    <value>Значительные</value>
-  </data>
-  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 70</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="cbAvgValues.Properties.Items3" xml:space="preserve">
-    <value>Time</value>
-  </data>
-  <data name="teMaxCount.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 32pt</value>
-  </data>
-  <data name="&gt;&gt;teNorm.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teTimeFrom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TimeEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
-    <value>gridColumn3</value>
-  </data>
-  <data name="chartControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1168, 248</value>
-  </data>
-  <data name="&gt;&gt;leNextMachineParam.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="leNextMachineParam.Properties.Buttons1" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Delete</value>
-  </data>
-  <data name="&gt;&gt;chartDetail.Type" xml:space="preserve">
-    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="leMachineParam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>611, 45</value>
+  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="gridColumn6.Width" type="System.Int32, mscorlib">
     <value>124</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teTimeTo.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TimeEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton3.Name" xml:space="preserve">
-    <value>simpleButton3</value>
-  </data>
-  <data name="&gt;&gt;cbAlternativeParam.Name" xml:space="preserve">
-    <value>cbAlternativeParam</value>
-  </data>
-  <data name="&gt;&gt;simpleButton3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
-    <value>gridColumn8</value>
-  </data>
-  <data name="teMaxCount.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="gridColumn9.Caption" xml:space="preserve">
-    <value>MstFunction</value>
-  </data>
-  <data name="sbLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 561</value>
-  </data>
-  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;teMiniOperation.Name" xml:space="preserve">
-    <value>teMiniOperation</value>
-  </data>
-  <data name="layoutControlGroup5.Text" xml:space="preserve">
-    <value>Цикл</value>
-  </data>
-  <data name="&gt;&gt;teMinCount.Name" xml:space="preserve">
-    <value>teMinCount</value>
-  </data>
-  <data name="teTimeFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem16.Name" xml:space="preserve">
-    <value>layoutControlItem16</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
-    <value>emptySpaceItem2</value>
-  </data>
-  <data name="layoutControlGroup8.Text" xml:space="preserve">
-    <value>Управляющие программы</value>
-  </data>
-  <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;teUp.Name" xml:space="preserve">
-    <value>teUp</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup8.Name" xml:space="preserve">
-    <value>layoutControlGroup8</value>
-  </data>
-  <data name="&gt;&gt;leMachineParam.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;teTimeTo.Name" xml:space="preserve">
-    <value>teTimeTo</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="layoutControlItem7.CustomizationFormText" xml:space="preserve">
-    <value>Часов</value>
-  </data>
-  <data name="teTimeFrom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="&gt;&gt;gridColumn9.Name" xml:space="preserve">
-    <value>gridColumn9</value>
-  </data>
-  <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;УП.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;leNextMachineParam.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="chartControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 142</value>
-  </data>
-  <data name="&gt;&gt;chartControl1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
-    <value>layoutControlItem3</value>
-  </data>
-  <data name="teMinCount.EditValue" xml:space="preserve">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;chartPie.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="dtFromDate.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tabbedControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMin1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 561</value>
-  </data>
-  <data name="teMax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 648</value>
-  </data>
-  <data name="&gt;&gt;sbLevel.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="cbAlternativeParam.Properties.Items2" xml:space="preserve">
-    <value>Зависимость Времени от Нагрузки</value>
-  </data>
-  <data name="&gt;&gt;chartControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="leNextMachineParam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 20</value>
-  </data>
-  <data name="sbLevel.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="chartControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
-    <value>layoutControlItem2</value>
-  </data>
-  <data name="&gt;&gt;teMaxCount.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="dtToDate.Properties.Mask.EditMask" xml:space="preserve">
-    <value>d</value>
-  </data>
-  <data name="&gt;&gt;cbVisuals.Name" xml:space="preserve">
-    <value>cbVisuals</value>
-  </data>
-  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
-    <value>gridColumn6</value>
-  </data>
-  <data name="gridColumn12.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;leMachineParam.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teMinCount.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 16pt</value>
-  </data>
-  <data name="cbVisuals.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teMinCount.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn13.Name" xml:space="preserve">
-    <value>gridColumn13</value>
-  </data>
-  <data name="&gt;&gt;ceIsHideOthers.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="cbAlternativeParam.Properties.Items1" xml:space="preserve">
-    <value>Распределение средней нагрузки</value>
-  </data>
-  <data name="gridColumn12.Caption" xml:space="preserve">
-    <value>AvgPercentCorrectSpeed</value>
-  </data>
-  <data name="dtToDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 20</value>
-  </data>
-  <data name="&gt;&gt;chartDetail.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;gcUP.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem17.Name" xml:space="preserve">
-    <value>layoutControlItem17</value>
-  </data>
-  <data name="sbLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="leMachine.Properties.Columns" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="layoutControlItem29.Text" xml:space="preserve">
-    <value>Сравнение</value>
-  </data>
-  <data name="teMinCount.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 170</value>
-  </data>
   <data name="gridColumn7.Caption" xml:space="preserve">
     <value>ProcessingTime</value>
   </data>
-  <data name="teMaxCount.Properties.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="gridColumn7.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="gridColumn7.VisibleIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="layoutControlGroup3.Text" xml:space="preserve">
-    <value>Детали УП</value>
-  </data>
-  <data name="layoutControlItem26.Text" xml:space="preserve">
-    <value>Ср.Значение</value>
-  </data>
-  <data name="&gt;&gt;tmAutoZoom.Name" xml:space="preserve">
-    <value>tmAutoZoom</value>
-  </data>
-  <data name="teMax2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 561</value>
-  </data>
-  <data name="&gt;&gt;leMachineParam.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem18.Name" xml:space="preserve">
-    <value>layoutControlItem18</value>
-  </data>
-  <data name="ceIsHideOthers.Properties.DisplayValueUnchecked" xml:space="preserve">
-    <value />
-  </data>
-  <data name="teNorm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 115</value>
-  </data>
-  <data name="teMax1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="teTimeTo.EditValue" type="System.DateTime, mscorlib">
-    <value>07/15/2020 23:59:00</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem29.Name" xml:space="preserve">
-    <value>layoutControlItem29</value>
-  </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
     <value>121</value>
   </data>
-  <data name="chartDetail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="gridColumn8.Caption" xml:space="preserve">
+    <value>HighSpeedTime</value>
   </data>
-  <data name="&gt;&gt;teMax.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
+  <data name="gridColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;gridColumn13.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;chartControl1.Name" xml:space="preserve">
-    <value>chartControl1</value>
+  <data name="gridColumn8.Width" type="System.Int32, mscorlib">
+    <value>121</value>
   </data>
-  <data name="&gt;&gt;lcSbLoad.Name" xml:space="preserve">
-    <value>lcSbLoad</value>
+  <data name="gridColumn9.Caption" xml:space="preserve">
+    <value>MstFunction</value>
   </data>
-  <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;teMin.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;gcUP.ZOrder" xml:space="preserve">
+  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="gridColumn10.Caption" xml:space="preserve">
+    <value>StopTime</value>
+  </data>
+  <data name="gridColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn10.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gridColumn10.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="gridColumn11.Caption" xml:space="preserve">
+    <value>AvgPercentCorrectFeed</value>
+  </data>
+  <data name="gridColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn11.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gridColumn11.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="gridColumn12.Caption" xml:space="preserve">
+    <value>AvgPercentCorrectSpeed</value>
+  </data>
+  <data name="gridColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn12.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gridColumn12.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="gridColumn13.Caption" xml:space="preserve">
+    <value>ExecutionUpStatusTypeId</value>
+  </data>
+  <data name="gridColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn13.VisibleIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="teState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>398, 20</value>
+  <data name="gridColumn13.Width" type="System.Int32, mscorlib">
+    <value>139</value>
   </data>
-  <data name="gcUP.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="gcFileUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1168, 248</value>
+  </data>
+  <data name="gcFileUp.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;gcFileUp.Name" xml:space="preserve">
+    <value>gcFileUp</value>
+  </data>
+  <data name="&gt;&gt;gcFileUp.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gcFileUp.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;gcFileUp.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ccMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="ccMain.Legend.AlignmentHorizontal" type="DevExpress.XtraCharts.LegendAlignmentHorizontal, DevExpress.XtraCharts.v20.2">
+    <value>Right</value>
+  </data>
+  <data name="ccMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 142</value>
   </data>
-  <data name="&gt;&gt;simpleButton1.Name" xml:space="preserve">
-    <value>simpleButton1</value>
+  <data name="ccMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1168, 248</value>
   </data>
-  <data name="layoutControlItem7.Text" xml:space="preserve">
-    <value>Часов</value>
+  <data name="ccMain.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
-  <data name="&gt;&gt;layoutControlGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;ccMain.Name" xml:space="preserve">
+    <value>ccMain</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
-    <value>layoutControlItem1</value>
+  <data name="&gt;&gt;ccMain.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="teMax1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 561</value>
+  <data name="&gt;&gt;ccMain.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
   </data>
-  <data name="teMin1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="&gt;&gt;ccMain.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;teMax2.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="chartPie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>724, 599</value>
   </data>
-  <data name="layoutControlItem8.Text" xml:space="preserve">
-    <value>Тех. операция</value>
+  <data name="series1.Name" xml:space="preserve">
+    <value>Series 1</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem28.Name" xml:space="preserve">
-    <value>layoutControlItem28</value>
+  <data name="chartPie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>456, 221</value>
   </data>
-  <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="chartPie.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
-  <data name="teTimeTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
+  <data name="&gt;&gt;chartPie.Name" xml:space="preserve">
+    <value>chartPie</value>
+  </data>
+  <data name="&gt;&gt;chartPie.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chartPie.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;chartPie.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 734</value>
+  </data>
+  <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 86</value>
+  </data>
+  <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="simpleButton2.Text" xml:space="preserve">
+    <value>Заполнить историю</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
+    <value>simpleButton2</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
     <value>layoutControl1</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem15.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
-    <value>layoutControlItem5</value>
+  <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
   </data>
-  <data name="chartComparer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>851, 508</value>
+  <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 734</value>
+  </data>
+  <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 86</value>
+  </data>
+  <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="simpleButton1.Text" xml:space="preserve">
+    <value>Добавить правило</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Name" xml:space="preserve">
+    <value>simpleButton1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="teNorm.EditValue" xml:space="preserve">
+    <value>854,9</value>
+  </data>
+  <data name="teNorm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 615</value>
+  </data>
+  <data name="teNorm.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="teNorm.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 32pt</value>
+  </data>
+  <data name="teNorm.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="teNorm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 115</value>
+  </data>
+  <data name="teNorm.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;teNorm.Name" xml:space="preserve">
+    <value>teNorm</value>
+  </data>
+  <data name="&gt;&gt;teNorm.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teNorm.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teNorm.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="teMinCount.EditValue" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="teMinCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 648</value>
+  </data>
+  <data name="teMinCount.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="teMinCount.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 32pt</value>
+  </data>
+  <data name="teMinCount.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="teMinCount.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="teMinCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 70</value>
+  </data>
+  <data name="teMinCount.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;teMinCount.Name" xml:space="preserve">
+    <value>teMinCount</value>
+  </data>
+  <data name="&gt;&gt;teMinCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMinCount.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMinCount.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="teMaxCount.EditValue" xml:space="preserve">
+    <value>2,4</value>
+  </data>
+  <data name="teMaxCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 648</value>
+  </data>
+  <data name="teMaxCount.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="teMaxCount.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 32pt</value>
+  </data>
+  <data name="teMaxCount.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="teMaxCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 70</value>
+  </data>
+  <data name="teMaxCount.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;teMaxCount.Name" xml:space="preserve">
+    <value>teMaxCount</value>
+  </data>
+  <data name="&gt;&gt;teMaxCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMaxCount.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMaxCount.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="teMax.EditValue" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="teMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 648</value>
+  </data>
+  <data name="teMax.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="teMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="teMax.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 32pt</value>
+  </data>
+  <data name="teMax.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="teMax.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="teMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 70</value>
+  </data>
+  <data name="teMax.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;teMax.Name" xml:space="preserve">
+    <value>teMax</value>
+  </data>
+  <data name="&gt;&gt;teMax.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMax.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMax.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="teMin.EditValue" xml:space="preserve">
+    <value>179,1</value>
+  </data>
+  <data name="teMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 648</value>
+  </data>
+  <data name="teMin.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="teMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="teMin.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 32pt</value>
+  </data>
+  <data name="teMin.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="teMin.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 70</value>
   </data>
-  <data name="&gt;&gt;layoutControlGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="teMin.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem27.Name" xml:space="preserve">
-    <value>layoutControlItem27</value>
+  <data name="&gt;&gt;teMin.Name" xml:space="preserve">
+    <value>teMin</value>
   </data>
-  <data name="&gt;&gt;teMax.Type" xml:space="preserve">
+  <data name="&gt;&gt;teMin.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMin.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMin.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lueFirstMachineParam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 45</value>
+  </data>
+  <data name="lueFirstMachineParam.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="lueFirstMachineParam.Properties.Columns" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lueFirstMachineParam.Properties.Columns1" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="lueFirstMachineParam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 20</value>
+  </data>
+  <data name="lueFirstMachineParam.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;lueFirstMachineParam.Name" xml:space="preserve">
+    <value>lueFirstMachineParam</value>
+  </data>
+  <data name="&gt;&gt;lueFirstMachineParam.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lueFirstMachineParam.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lueFirstMachineParam.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lueMachine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 45</value>
+  </data>
+  <data name="lueMachine.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="lueMachine.Properties.Columns" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lueMachine.Properties.Columns1" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="lueMachine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="lueMachine.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lueMachine.Name" xml:space="preserve">
+    <value>lueMachine</value>
+  </data>
+  <data name="&gt;&gt;lueMachine.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lueMachine.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lueMachine.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="sbLevel.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="sbLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 561</value>
+  </data>
+  <data name="sbLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="sbLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="sbLevel.Text" xml:space="preserve">
+    <value>Сформировать автоматически (правило Парето)</value>
+  </data>
+  <data name="&gt;&gt;sbLevel.Name" xml:space="preserve">
+    <value>sbLevel</value>
+  </data>
+  <data name="&gt;&gt;sbLevel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;sbLevel.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;sbLevel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="teMax2.EditValue" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="teMax2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 561</value>
+  </data>
+  <data name="teMax2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="teMax2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;teMax2.Name" xml:space="preserve">
+    <value>teMax2</value>
+  </data>
+  <data name="&gt;&gt;teMax2.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;teMax2.Parent" xml:space="preserve">
     <value>layoutControl1</value>
   </data>
-  <data name="&gt;&gt;leMachine.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;sbLevel.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="teNorm.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 32pt</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem14.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teTimeFrom.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="layoutControlItem12.Text" xml:space="preserve">
-    <value>min</value>
-  </data>
-  <data name="dtFromDate.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
-    <value>T</value>
-  </data>
-  <data name="&gt;&gt;teMax1.Name" xml:space="preserve">
-    <value>teMax1</value>
-  </data>
-  <data name="layoutControlItem20.Text" xml:space="preserve">
-    <value>Без нарушений (часов)</value>
-  </data>
-  <data name="gridColumn11.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem18.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMiniOperation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1090, 20</value>
-  </data>
-  <data name="dtToDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="teMax.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;lcgOtcl.Name" xml:space="preserve">
-    <value>lcgOtcl</value>
-  </data>
-  <data name="&gt;&gt;cbAlternativeParam.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teState.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teNorm.EditValue" xml:space="preserve">
-    <value>854,9</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem14.Name" xml:space="preserve">
-    <value>layoutControlItem14</value>
-  </data>
-  <data name="&gt;&gt;teTimeTo.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem17.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="layoutControlGroup4.Text" xml:space="preserve">
-    <value>Данные телеметрии</value>
-  </data>
-  <data name="gridColumn4.Caption" xml:space="preserve">
-    <value>УП</value>
-  </data>
-  <data name="&gt;&gt;gvUP.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn11.Caption" xml:space="preserve">
-    <value>AvgPercentCorrectFeed</value>
-  </data>
-  <data name="&gt;&gt;teMin1.Name" xml:space="preserve">
-    <value>teMin1</value>
-  </data>
-  <data name="cbAvgValues.Properties.Items" xml:space="preserve">
-    <value>Avg</value>
-  </data>
-  <data name="chartComparer.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;simpleButton1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMax1.EditValue" xml:space="preserve">
-    <value>60</value>
-  </data>
-  <data name="layoutControl1.Text" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="teMin.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 70</value>
-  </data>
-  <data name="&gt;&gt;chartComparer.Name" xml:space="preserve">
-    <value>chartComparer</value>
-  </data>
-  <data name="&gt;&gt;teMin1.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 86</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v20.2" name="DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gcUP.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v20.2">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem16.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teNorm.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="С.Text" xml:space="preserve">
-    <value>Период с</value>
-  </data>
-  <data name="&gt;&gt;lcSbLoad.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="leNextMachineParam.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
-    <value>tabbedControlGroup1</value>
-  </data>
-  <data name="&gt;&gt;splitterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 648</value>
-  </data>
-  <data name="&gt;&gt;tabbedControlGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chartControl1.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="dtToDate.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="teNorm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 615</value>
-  </data>
-  <data name="leMachine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 45</value>
-  </data>
-  <data name="simpleButton2.Text" xml:space="preserve">
-    <value>Заполнить историю</value>
-  </data>
-  <data name="teMax.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="gridColumn13.Caption" xml:space="preserve">
-    <value>ExecutionUpStatusTypeId</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup9.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;teMax1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="cbVisuals.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 734</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;teMax.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;teMiniOperation.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="ceIsHideOthers.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="teMin2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 20</value>
-  </data>
-  <data name="gridColumn11.VisibleIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="leMachineParam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 20</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
-    <value>simpleButton2</value>
-  </data>
-  <data name="gridColumn12.VisibleIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="teTimeTo.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="layoutControlItem28.Text" xml:space="preserve">
-    <value>Второй параметр</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup8.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem28.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;leMachine.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teState.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;leNextMachineParam.Name" xml:space="preserve">
-    <value>leNextMachineParam</value>
-  </data>
-  <data name="&gt;&gt;teMin2.Name" xml:space="preserve">
-    <value>teMin2</value>
-  </data>
-  <data name="ceIsHideOthers.Properties.DisplayValueChecked" xml:space="preserve">
-    <value />
-  </data>
-  <data name="teMinCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 70</value>
-  </data>
-  <data name="leMachine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 20</value>
-  </data>
-  <data name="&gt;&gt;cbVisuals.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="teMax.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 70</value>
-  </data>
-  <data name="&gt;&gt;cbVisuals.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem10.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="cbAvgValues.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TechnologyControl</value>
-  </data>
-  <data name="teMax.EditValue" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 86</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="layoutControlGroup2.Text" xml:space="preserve">
-    <value>Фильтр</value>
-  </data>
-  <data name="gridColumn12.Width" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="dtFromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 69</value>
-  </data>
-  <data name="gcUP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1168, 248</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lcgLevels.Text" xml:space="preserve">
-    <value>Допустимые уровни</value>
-  </data>
-  <data name="&gt;&gt;dtToDate.Name" xml:space="preserve">
-    <value>dtToDate</value>
-  </data>
-  <data name="&gt;&gt;С.Name" xml:space="preserve">
-    <value>С</value>
-  </data>
-  <data name="dtToDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;chartComparer.Type" xml:space="preserve">
-    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="ceIsHideOthers.Properties.Caption" xml:space="preserve">
-    <value>Скрыть ложные</value>
-  </data>
-  <data name="dtToDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="gridColumn10.Width" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
-    <value>gridColumn5</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem13.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teTimeFrom.EditValue" type="System.DateTime, mscorlib">
-    <value>2020-07-15</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
-  <data name="gridColumn8.Width" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="&gt;&gt;tmAutoZoom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtToDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;УП.Name" xml:space="preserve">
-    <value>УП</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teTimeTo.Properties.Mask.EditMask" xml:space="preserve">
-    <value>t</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;leNextMachineParam.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;gvUP.Name" xml:space="preserve">
-    <value>gvUP</value>
-  </data>
-  <data name="&gt;&gt;dtFromDate.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="cbAvgValues.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 484</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem25.Name" xml:space="preserve">
-    <value>layoutControlItem25</value>
-  </data>
-  <data name="teMax1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="layoutControlItem9.Text" xml:space="preserve">
-    <value>Состояние</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem12.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chartDetail.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;cbAvgValues.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="layoutControlItem11.Text" xml:space="preserve">
-    <value>max</value>
-  </data>
-  <data name="teState.Location" type="System.Drawing.Point, System.Drawing">
-    <value>794, 69</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="cbAvgValues.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="lcSbLoad.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gcUP.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v20.2">
-    <value>Default</value>
-  </data>
-  <data name="cbVisuals.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 484</value>
-  </data>
-  <data name="leMachine.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem24.Name" xml:space="preserve">
-    <value>layoutControlItem24</value>
-  </data>
-  <data name="ceIsHideOthers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 484</value>
-  </data>
-  <data name="lcSbLoad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1051, 69</value>
-  </data>
-  <data name="teUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 69</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem22.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem25.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
-    <value>layoutControlGroup1</value>
-  </data>
-  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="dtFromDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;teState.Name" xml:space="preserve">
-    <value>teState</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem19.Name" xml:space="preserve">
-    <value>layoutControlItem19</value>
-  </data>
-  <data name="&gt;&gt;teMaxCount.Name" xml:space="preserve">
-    <value>teMaxCount</value>
-  </data>
-  <data name="&gt;&gt;gridColumn12.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;dtToDate.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
-    <value>layoutControlItem4</value>
-  </data>
-  <data name="chartDetail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 508</value>
-  </data>
-  <data name="&gt;&gt;teMin.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="teMin1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="layoutControlItem17.Text" xml:space="preserve">
-    <value>Кол-во</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbAvgValues.Name" xml:space="preserve">
-    <value>cbAvgValues</value>
-  </data>
-  <data name="layoutControlItem6.Text" xml:space="preserve">
-    <value>Параметр</value>
-  </data>
-  <data name="&gt;&gt;teMin.Name" xml:space="preserve">
-    <value>teMin</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem24.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn7.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;teNorm.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <assembly alias="DevExpress.XtraCharts.v20.2" name="DevExpress.XtraCharts.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="chartDetail.Legend.AlignmentHorizontal" type="DevExpress.XtraCharts.LegendAlignmentHorizontal, DevExpress.XtraCharts.v20.2">
-    <value>Right</value>
-  </data>
-  <data name="gridColumn8.Caption" xml:space="preserve">
-    <value>HighSpeedTime</value>
-  </data>
-  <data name="gridColumn1.Caption" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="&gt;&gt;teMinCount.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;teNorm.Name" xml:space="preserve">
-    <value>teNorm</value>
-  </data>
-  <data name="teNorm.Properties.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sbLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 22</value>
-  </data>
-  <data name="&gt;&gt;leMachine.Name" xml:space="preserve">
-    <value>leMachine</value>
-  </data>
-  <data name="cbAlternativeParam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 20</value>
-  </data>
-  <data name="&gt;&gt;teState.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;dtFromDate.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="layoutControlItem16.Text" xml:space="preserve">
-    <value>Станок</value>
-  </data>
-  <data name="teTimeTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 69</value>
-  </data>
-  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="cbVisuals.Properties.Items" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem27.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="chartControl1.Legend.AlignmentHorizontal" type="DevExpress.XtraCharts.LegendAlignmentHorizontal, DevExpress.XtraCharts.v20.2">
-    <value>Right</value>
-  </data>
-  <data name="teMin.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="layoutControlItem30.Text" xml:space="preserve">
-    <value>Доп параметры</value>
-  </data>
-  <data name="layoutControlItem13.Text" xml:space="preserve">
-    <value>max</value>
-  </data>
-  <data name="&gt;&gt;chartPie.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="teState.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="sbLevel.Text" xml:space="preserve">
-    <value>Сформировать автоматически (правило Парето)</value>
-  </data>
-  <data name="cbVisuals.Properties.Items3" xml:space="preserve">
-    <value>Параметры среднего значения</value>
-  </data>
-  <data name="&gt;&gt;lcgOtcl.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;gcUP.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="chartComparer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 312</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn5.Caption" xml:space="preserve">
-    <value>Начало</value>
-  </data>
-  <data name="teMiniOperation.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="layoutControlItem19.Text" xml:space="preserve">
-    <value>Кол-во</value>
-  </data>
-  <data name="simpleButton1.Text" xml:space="preserve">
-    <value>Добавить правило</value>
-  </data>
-  <data name="chartDetail.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
-    <value>layoutControlItem7</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem26.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn10.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="leNextMachineParam.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gcUP.Name" xml:space="preserve">
-    <value>gcUP</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem15.Name" xml:space="preserve">
-    <value>layoutControlItem15</value>
-  </data>
-  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn10.Caption" xml:space="preserve">
-    <value>StopTime</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup5.Name" xml:space="preserve">
-    <value>layoutControlGroup5</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem20.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMin.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 32pt</value>
-  </data>
-  <data name="&gt;&gt;teMaxCount.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="ceIsHideOthers.Properties.DisplayValueGrayed" xml:space="preserve">
-    <value />
-  </data>
-  <data name="dtFromDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
-    <value>Combo</value>
-  </data>
-  <data name="teMaxCount.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 170</value>
-  </data>
-  <data name="teTimeFrom.Properties.Mask.EditMask" xml:space="preserve">
-    <value>t</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem6.Name" xml:space="preserve">
-    <value>layoutControlItem6</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1216, 856</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem19.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;teMax2.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="teMin2.EditValue" xml:space="preserve">
     <value>60</value>
   </data>
-  <data name="leMachine.Properties.Columns1" xml:space="preserve">
-    <value>Наименование</value>
+  <data name="teMin2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>325, 561</value>
   </data>
-  <data name="teMax.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 170</value>
+  <data name="teMin2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
   </data>
-  <data name="&gt;&gt;teTimeTo.ZOrder" xml:space="preserve">
+  <data name="teMin2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;teMin2.Name" xml:space="preserve">
+    <value>teMin2</value>
+  </data>
+  <data name="&gt;&gt;teMin2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMin2.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMin2.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="teMax1.EditValue" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="teMax1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 561</value>
+  </data>
+  <data name="teMax1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="teMax1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;teMax1.Name" xml:space="preserve">
+    <value>teMax1</value>
+  </data>
+  <data name="&gt;&gt;teMax1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMax1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMax1.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="teMin1.EditValue" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="teMin1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 561</value>
+  </data>
+  <data name="teMin1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="teMin1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;teMin1.Name" xml:space="preserve">
+    <value>teMin1</value>
+  </data>
+  <data name="&gt;&gt;teMin1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMin1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMin1.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="sbLoad.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="sbLoad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1051, 69</value>
+  </data>
+  <data name="sbLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="sbLoad.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="sbLoad.Text" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="&gt;&gt;sbLoad.Name" xml:space="preserve">
+    <value>sbLoad</value>
+  </data>
+  <data name="&gt;&gt;sbLoad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;sbLoad.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;sbLoad.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="teTo.EditValue" type="System.DateTime, mscorlib">
+    <value>07/15/2020 23:59:00</value>
+  </data>
+  <data name="teTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 69</value>
+  </data>
+  <data name="teTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="teTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="teTo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;teTo.Name" xml:space="preserve">
+    <value>teTo</value>
+  </data>
+  <data name="&gt;&gt;teTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TimeEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teTo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teTo.ZOrder" xml:space="preserve">
     <value>27</value>
   </data>
-  <data name="lcgOtcl.Text" xml:space="preserve">
-    <value>Рассчитанные нарушния за период</value>
+  <data name="teFrom.EditValue" type="System.DateTime, mscorlib">
+    <value>2020-07-15</value>
   </data>
-  <data name="&gt;&gt;chartPie.Type" xml:space="preserve">
-    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v20.2.UI, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="teFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 69</value>
   </data>
-  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+  <data name="teFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="teFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="teFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;teFrom.Name" xml:space="preserve">
+    <value>teFrom</value>
+  </data>
+  <data name="&gt;&gt;teFrom.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TimeEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teFrom.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teFrom.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="deTo.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="deTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 69</value>
+  </data>
+  <data name="deTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="deTo.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="deTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="deTo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;deTo.Name" xml:space="preserve">
+    <value>deTo</value>
+  </data>
+  <data name="&gt;&gt;deTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;deTo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;deTo.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="deFrom.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="deFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 69</value>
+  </data>
+  <data name="deFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="deFrom.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="deFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="deFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;deFrom.Name" xml:space="preserve">
+    <value>deFrom</value>
+  </data>
+  <data name="&gt;&gt;deFrom.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;deFrom.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;deFrom.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="teMiniOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 69</value>
+  </data>
+  <data name="teMiniOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1090, 20</value>
+  </data>
+  <data name="teMiniOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;teMiniOperation.Name" xml:space="preserve">
+    <value>teMiniOperation</value>
+  </data>
+  <data name="&gt;&gt;teMiniOperation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teMiniOperation.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teMiniOperation.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="teUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 69</value>
+  </data>
+  <data name="teUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>793, 20</value>
+  </data>
+  <data name="teUp.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;teUp.Name" xml:space="preserve">
+    <value>teUp</value>
+  </data>
+  <data name="&gt;&gt;teUp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;teUp.Parent" xml:space="preserve">
     <value>layoutControl1</value>
   </data>
   <data name="&gt;&gt;teUp.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
-  <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 16pt</value>
+  <data name="teState.Location" type="System.Drawing.Point, System.Drawing">
+    <value>794, 69</value>
   </data>
-  <data name="chartControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;leMachine.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;teMiniOperation.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbAvgValues.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="gridColumn10.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="layoutControlGroup9.Text" xml:space="preserve">
-    <value>Анализ УП</value>
-  </data>
-  <data name="leMachine.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+  <data name="teState.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
     <value>Combo</value>
   </data>
-  <data name="teMinCount.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="teState.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 20</value>
   </data>
-  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="teState.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;sbLevel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;teState.Name" xml:space="preserve">
+    <value>teState</value>
   </data>
-  <data name="&gt;&gt;С.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem30.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teTimeFrom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 69</value>
-  </data>
-  <data name="&gt;&gt;teMin2.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="cbAvgValues.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
-  </data>
-  <data name="&gt;&gt;teMax2.Name" xml:space="preserve">
-    <value>teMax2</value>
-  </data>
-  <data name="&gt;&gt;teMin1.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;cbAlternativeParam.Type" xml:space="preserve">
+  <data name="&gt;&gt;teState.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
-    <value>gridColumn10</value>
-  </data>
-  <data name="&gt;&gt;chartComparer.Parent" xml:space="preserve">
+  <data name="&gt;&gt;teState.Parent" xml:space="preserve">
     <value>layoutControl1</value>
   </data>
-  <data name="cbAlternativeParam.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+  <data name="&gt;&gt;teState.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="ccbeAdditionalParam.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ccbeAdditionalParam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 484</value>
+  </data>
+  <data name="ccbeAdditionalParam.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
     <value>Combo</value>
   </data>
-  <data name="chartPie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>456, 221</value>
-  </data>
-  <data name="&gt;&gt;chartComparer.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;teTimeFrom.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="dtToDate.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
-    <value>T</value>
-  </data>
-  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1216, 856</value>
-  </data>
-  <data name="&gt;&gt;cbAlternativeParam.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cbAlternativeParam.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="cbVisuals.Properties.Items1" xml:space="preserve">
-    <value>Параметры времени</value>
-  </data>
-  <data name="dtFromDate.Properties.Mask.EditMask" xml:space="preserve">
-    <value>d</value>
-  </data>
-  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem21.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teMaxCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 648</value>
-  </data>
-  <data name="&gt;&gt;teMiniOperation.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn3.Caption" xml:space="preserve">
-    <value>FileUpId</value>
-  </data>
-  <data name="teNorm.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 170</value>
-  </data>
-  <data name="leNextMachineParam.Properties.NullText" xml:space="preserve">
-    <value>[нет данных]</value>
-  </data>
-  <data name="&gt;&gt;teMaxCount.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
-    <value>layoutControlGroup3</value>
-  </data>
-  <data name="&gt;&gt;lcSbLoad.Parent" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+  <data name="ccbeAdditionalParam.Properties.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem31.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="ccbeAdditionalParam.Properties.Items1" xml:space="preserve">
+    <value>Параметры времени</value>
+  </data>
+  <data name="ccbeAdditionalParam.Properties.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ccbeAdditionalParam.Properties.Items3" xml:space="preserve">
+    <value>Параметры среднего значения</value>
+  </data>
+  <data name="ccbeAdditionalParam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 20</value>
+  </data>
+  <data name="ccbeAdditionalParam.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;ccbeAdditionalParam.Name" xml:space="preserve">
+    <value>ccbeAdditionalParam</value>
+  </data>
+  <data name="&gt;&gt;ccbeAdditionalParam.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ccbeAdditionalParam.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ccbeAdditionalParam.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lueSecondMachineParam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 45</value>
+  </data>
+  <data name="lueSecondMachineParam.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.2">
+    <value>Combo</value>
+  </data>
+  <data name="lueSecondMachineParam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="lueSecondMachineParam.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;lueSecondMachineParam.Name" xml:space="preserve">
+    <value>lueSecondMachineParam</value>
+  </data>
+  <data name="&gt;&gt;lueSecondMachineParam.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lueSecondMachineParam.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lueSecondMachineParam.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControlItem9.Text" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="layoutControlItem8.Text" xml:space="preserve">
+    <value>Тех. операция</value>
+  </data>
+  <data name="layoutControlGroup5.Text" xml:space="preserve">
+    <value>Цикл</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lciMachine.Text" xml:space="preserve">
+    <value>Станок</value>
+  </data>
+  <data name="lciFirstMachineParam.Text" xml:space="preserve">
+    <value>Параметр</value>
+  </data>
+  <data name="lciDateFrom.Text" xml:space="preserve">
+    <value>Период с</value>
+  </data>
+  <data name="lciDateTo.Text" xml:space="preserve">
+    <value>по</value>
+  </data>
+  <data name="lciSecondMachineParam.Text" xml:space="preserve">
+    <value>Второй параметр</value>
+  </data>
+  <data name="lcgFilter.Text" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="lcgMainChart.Text" xml:space="preserve">
+    <value>Данные телеметрии</value>
+  </data>
+  <data name="layoutControlGroup8.Text" xml:space="preserve">
+    <value>Управляющие программы</value>
+  </data>
+  <data name="lciAvg.Text" xml:space="preserve">
+    <value>Ср.Значение</value>
+  </data>
+  <data name="lciCompare.Text" xml:space="preserve">
+    <value>Сравнение</value>
+  </data>
+  <data name="lciAdditionalParam.Text" xml:space="preserve">
+    <value>Доп параметры</value>
+  </data>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>Детали УП</value>
+  </data>
+  <data name="layoutControlItem20.Text" xml:space="preserve">
+    <value>Без нарушений (часов)</value>
+  </data>
+  <data name="layoutControlItem7.CustomizationFormText" xml:space="preserve">
+    <value>Часов</value>
+  </data>
+  <data name="layoutControlItem7.Text" xml:space="preserve">
+    <value>Часов</value>
+  </data>
+  <data name="layoutControlItem19.Text" xml:space="preserve">
+    <value>Кол-во</value>
+  </data>
+  <data name="layoutControlGroup6.Text" xml:space="preserve">
+    <value>Незначительные</value>
+  </data>
+  <data name="layoutControlItem18.Text" xml:space="preserve">
+    <value>Часов</value>
+  </data>
+  <data name="layoutControlItem17.Text" xml:space="preserve">
+    <value>Кол-во</value>
+  </data>
+  <data name="layoutControlGroup7.Text" xml:space="preserve">
+    <value>Значительные</value>
   </data>
   <data name="layoutControlItem10.Text" xml:space="preserve">
     <value>Правило: min</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem23.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="layoutControlItem11.Text" xml:space="preserve">
+    <value>max</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="layoutControlItem12.Text" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="layoutControlItem13.Text" xml:space="preserve">
+    <value>max</value>
+  </data>
+  <data name="lcgLevels.Text" xml:space="preserve">
+    <value>Допустимые уровни</value>
+  </data>
+  <data name="lcgOtcl.Text" xml:space="preserve">
+    <value>Рассчитанные нарушния за период</value>
+  </data>
+  <data name="lcgAnalysis.Text" xml:space="preserve">
+    <value>Анализ УП</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1216, 856</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="tmAutoZoom.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="chartDetail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>811, 312</value>
-  </data>
-  <data name="&gt;&gt;ceIsHideOthers.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+  <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="cbVisuals.Properties.Items2" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;simpleButton3.Name" xml:space="preserve">
+    <value>simpleButton3</value>
   </data>
-  <data name="teMin.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 170</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem11.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="teNorm.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="cbAvgValues.Properties.Items2" xml:space="preserve">
-    <value>Dispersion</value>
-  </data>
-  <data name="&gt;&gt;teMax.Name" xml:space="preserve">
-    <value>teMax</value>
-  </data>
-  <data name="teMin1.EditValue" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="series1.Name" xml:space="preserve">
-    <value>Series 1</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
-    <value>layoutControlGroup2</value>
-  </data>
-  <data name="gridColumn11.Width" type="System.Int32, mscorlib">
-    <value>121</value>
+  <data name="&gt;&gt;simpleButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ru</value>
-  </metadata>
-  <metadata name="tmAutoZoom.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1216, 856</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Контроль технологии</value>
+  </data>
+  <data name="&gt;&gt;gvFileUp.Name" xml:space="preserve">
+    <value>gvFileUp</value>
+  </data>
+  <data name="&gt;&gt;gvFileUp.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
+    <value>gridColumn6</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Name" xml:space="preserve">
+    <value>gridColumn7</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
+    <value>gridColumn8</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Name" xml:space="preserve">
+    <value>gridColumn9</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
+    <value>gridColumn10</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
+    <value>gridColumn11</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Name" xml:space="preserve">
+    <value>gridColumn12</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Name" xml:space="preserve">
+    <value>gridColumn13</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Name" xml:space="preserve">
+    <value>layoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;УП.Name" xml:space="preserve">
+    <value>УП</value>
+  </data>
+  <data name="&gt;&gt;УП.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Name" xml:space="preserve">
+    <value>layoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Name" xml:space="preserve">
+    <value>layoutControlGroup5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgFilter.Name" xml:space="preserve">
+    <value>lcgFilter</value>
+  </data>
+  <data name="&gt;&gt;lcgFilter.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciMachine.Name" xml:space="preserve">
+    <value>lciMachine</value>
+  </data>
+  <data name="&gt;&gt;lciMachine.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciFirstMachineParam.Name" xml:space="preserve">
+    <value>lciFirstMachineParam</value>
+  </data>
+  <data name="&gt;&gt;lciFirstMachineParam.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciLoad.Name" xml:space="preserve">
+    <value>lciLoad</value>
+  </data>
+  <data name="&gt;&gt;lciLoad.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciDateFrom.Name" xml:space="preserve">
+    <value>lciDateFrom</value>
+  </data>
+  <data name="&gt;&gt;lciDateFrom.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciTime.Name" xml:space="preserve">
+    <value>lciTime</value>
+  </data>
+  <data name="&gt;&gt;lciTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciDateTo.Name" xml:space="preserve">
+    <value>lciDateTo</value>
+  </data>
+  <data name="&gt;&gt;lciDateTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciTimeTo.Name" xml:space="preserve">
+    <value>lciTimeTo</value>
+  </data>
+  <data name="&gt;&gt;lciTimeTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciSecondMachineParam.Name" xml:space="preserve">
+    <value>lciSecondMachineParam</value>
+  </data>
+  <data name="&gt;&gt;lciSecondMachineParam.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tcgMain.Name" xml:space="preserve">
+    <value>tcgMain</value>
+  </data>
+  <data name="&gt;&gt;tcgMain.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgMainChart.Name" xml:space="preserve">
+    <value>lcgMainChart</value>
+  </data>
+  <data name="&gt;&gt;lcgMainChart.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup8.Name" xml:space="preserve">
+    <value>layoutControlGroup8</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciFIleUp.Name" xml:space="preserve">
+    <value>lciFIleUp</value>
+  </data>
+  <data name="&gt;&gt;lciFIleUp.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgAnalysis.Name" xml:space="preserve">
+    <value>lcgAnalysis</value>
+  </data>
+  <data name="&gt;&gt;lcgAnalysis.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup2.Name" xml:space="preserve">
+    <value>tabbedControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciAnalysisChart.Name" xml:space="preserve">
+    <value>lciAnalysisChart</value>
+  </data>
+  <data name="&gt;&gt;lciAnalysisChart.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciAvg.Name" xml:space="preserve">
+    <value>lciAvg</value>
+  </data>
+  <data name="&gt;&gt;lciAvg.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciHideFalseData.Name" xml:space="preserve">
+    <value>lciHideFalseData</value>
+  </data>
+  <data name="&gt;&gt;lciHideFalseData.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem24.Name" xml:space="preserve">
+    <value>layoutControlItem24</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciCompare.Name" xml:space="preserve">
+    <value>lciCompare</value>
+  </data>
+  <data name="&gt;&gt;lciCompare.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lciAdditionalParam.Name" xml:space="preserve">
+    <value>lciAdditionalParam</value>
+  </data>
+  <data name="&gt;&gt;lciAdditionalParam.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgOtcl.Name" xml:space="preserve">
+    <value>lcgOtcl</value>
+  </data>
+  <data name="&gt;&gt;lcgOtcl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem20.Name" xml:space="preserve">
+    <value>layoutControlItem20</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem21.Name" xml:space="preserve">
+    <value>layoutControlItem21</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem21.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem22.Name" xml:space="preserve">
+    <value>layoutControlItem22</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem22.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem14.Name" xml:space="preserve">
+    <value>layoutControlItem14</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup6.Name" xml:space="preserve">
+    <value>layoutControlGroup6</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem19.Name" xml:space="preserve">
+    <value>layoutControlItem19</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup7.Name" xml:space="preserve">
+    <value>layoutControlGroup7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem18.Name" xml:space="preserve">
+    <value>layoutControlItem18</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem17.Name" xml:space="preserve">
+    <value>layoutControlItem17</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgLevels.Name" xml:space="preserve">
+    <value>lcgLevels</value>
+  </data>
+  <data name="&gt;&gt;lcgLevels.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Name" xml:space="preserve">
+    <value>layoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Name" xml:space="preserve">
+    <value>layoutControlItem11</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Name" xml:space="preserve">
+    <value>layoutControlItem12</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem13.Name" xml:space="preserve">
+    <value>layoutControlItem13</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem15.Name" xml:space="preserve">
+    <value>layoutControlItem15</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;splitterItem1.Name" xml:space="preserve">
+    <value>splitterItem1</value>
+  </data>
+  <data name="&gt;&gt;splitterItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tmAutoZoom.Name" xml:space="preserve">
+    <value>tmAutoZoom</value>
+  </data>
+  <data name="&gt;&gt;tmAutoZoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem31.Name" xml:space="preserve">
+    <value>layoutControlItem31</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem31.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TechnologyControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
