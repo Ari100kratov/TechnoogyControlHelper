@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище IndustryDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Machine">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="text" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="FinDate" Type="datetime" />
+    <Property Name="PluginID" Type="uniqueidentifier" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="MachineStateID" Type="int" />
+    <Property Name="ShortName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MachineNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="MachinePurposeID" Type="int" />
+    <Property Name="MachineTypeID" Type="int" />
+    <Property Name="DetailTypeID" Type="int" />
+    <Property Name="IsBlockedMachine" Type="int" Nullable="false" />
+    <Property Name="MachineModelId" Type="int" />
+    <Property Name="MoneyLoose" Type="float" />
+    <Property Name="ProgramFolder" Type="nvarchar" MaxLength="1024" />
+    <Property Name="IsHide" Type="int" Nullable="false" />
+    <Property Name="IntegrationID" Type="nvarchar" MaxLength="255" />
+    <Property Name="IntegrationDeptID" Type="nvarchar" MaxLength="255" />
+    <Property Name="OEEPlan" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="CNCNetworkFolder" Type="nvarchar" MaxLength="1023" />
+    <Property Name="UseKoeff" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="UseKoeffAviaSmol" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="IsDiagFaulted" Type="int" Nullable="false" />
+    <Property Name="IsUseBaltsystemCNC" Type="int" Nullable="false" />
+    <Property Name="IsSearchProgramByServer" Type="int" Nullable="false" />
+    <Property Name="IsAllowSetIdleMPDevice" Type="int" Nullable="false" />
+    <Property Name="IsAllowSetMiniOpMPDevice" Type="int" Nullable="false" />
+    <Property Name="SettingOeeID" Type="int" />
+    <Property Name="CurrentIntegrationProgramId" Type="int" />
+    <Property Name="IntegrationOperationId" Type="int" Nullable="false" />
+    <Property Name="kEquipmentId" Type="int" />
+    <Property Name="IsAutoControlPPR" Type="int" Nullable="false" />
+    <Property Name="NetworkWorkTypeId" Type="int" Nullable="false" />
+    <Property Name="FTPLogin" Type="nvarchar" MaxLength="50" />
+    <Property Name="FTPPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleteFileByFtp" Type="int" Nullable="false" />
+    <Property Name="IsSavePerformedUPToDisk" Type="int" Nullable="false" />
+    <Property Name="MachineParamForUPNoStandartId" Type="int" />
+    <Property Name="IsLoadingNotLinkedFolderUP" Type="int" Nullable="false" />
+    <Property Name="IsNotInAnalitic" Type="int" Nullable="false" />
+    <Property Name="IsInRealTimeOnClient" Type="int" Nullable="false" />
+    <Property Name="SynhrParamInMachineId" Type="int" />
+    <Property Name="MachineNominalPower" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="ProtocolWorkingWithUpTypeId" Type="int" Nullable="false" />
+    <Property Name="DPIsConnParamInMachineId" Type="int" />
+    <Property Name="IsAllowDownloadUpToMachineMemory" Type="int" Nullable="false" />
+    <Property Name="IsGettingUpFromLocalResource" Type="int" Nullable="false" />
+    <Property Name="UpLocalResourceTypeId" Type="int" Nullable="false" />
+    <Property Name="UpLocalResourcePath" Type="nvarchar(max)" />
+    <Property Name="UpLocalResourceLogin" Type="nvarchar" MaxLength="255" />
+    <Property Name="UpLocalResourcePassword" Type="nvarchar" MaxLength="255" />
+    <Property Name="ViDiagDeviceId" Type="int" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="RegisterDataProtocolId" Type="int" />
+    <Property Name="UpProtocolId" Type="int" />
+    <Property Name="MonitoringPointTypeId" Type="int" Nullable="false" />
+    <Property Name="IsTriggerIgnore" Type="int" Nullable="false" />
+    <Property Name="IsNeedTransferMultiplyFilesUp" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MachineParam">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineParamTypeID" Type="int" Nullable="false" />
+    <Property Name="DefaultLinkContext" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="DefaultColor" Type="int" />
+    <Property Name="Num" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ShortName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Code" Type="int" />
+    <Property Name="MeasureUnit" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsDel" Type="int" />
+    <Property Name="IsByShedule" Type="int" Nullable="false" />
+    <Property Name="IsServiceState" Type="int" Nullable="false" />
+    <Property Name="IsTakeOffAtStartProgram" Type="int" Nullable="false" />
+    <Property Name="AdditionalTypeId" Type="int" Nullable="false" />
+    <Property Name="IsDragWhenNoConnect" Type="int" Nullable="false" />
+    <Property Name="IsCounter" Type="int" Nullable="false" />
+    <Property Name="IsResetAfterShiftChange" Type="int" Nullable="false" />
+    <Property Name="IntegrationId" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="OperatingProgramExecutionLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineId" Type="int" Nullable="false" />
+    <Property Name="WorkerId" Type="int" />
+    <Property Name="FileUpId" Type="int" />
+    <Property Name="MonitoringValueId" Type="int" />
+    <Property Name="NameUP" Type="nvarchar" MaxLength="50" />
+    <Property Name="DtStart" Type="datetime" Nullable="false" />
+    <Property Name="DtEnd" Type="datetime" />
+    <Property Name="ProcessingTime" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="HighSpeedTime" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="MstFucnTime" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="StopTime" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="AvgPercentCorrectFeed" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="AvgPercentCorrectSpeed" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="ExecutionUpStatusTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParamInMachine">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineID" Type="int" Nullable="false" />
+    <Property Name="MachineParamID" Type="int" Nullable="false" />
+    <Property Name="LinkContext" Type="nvarchar" MaxLength="255" />
+    <Property Name="LastValueID" Type="int" />
+    <Property Name="ServiceCode" Type="int" />
+    <Property Name="FormulaText" Type="nvarchar(max)" />
+    <Property Name="CalcFormula" Type="nvarchar" MaxLength="250" />
+    <Property Name="CalcKoeff" Type="float" />
+    <Property Name="StartTimeOut" Type="int" />
+    <Property Name="EndTimeOut" Type="int" />
+    <Property Name="CalcDelta" Type="float" />
+    <Property Name="CalcTypeID" Type="int" Nullable="false" />
+    <Property Name="IsCalcDetail" Type="int" Nullable="false" />
+    <Property Name="kProtocolTypeID" Type="int" />
+    <Property Name="DelayTime" Type="int" />
+    <Property Name="IsDetailMadeItogCounter" Type="int" Nullable="false" />
+    <Property Name="IsInputByHand" Type="int" Nullable="false" />
+    <Property Name="IsPersecondMonitoring" Type="int" Nullable="false" />
+    <Property Name="IsForTransfer" Type="int" Nullable="false" />
+    <Property Name="MachineProtocolID" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsSendOutputSignal" Type="int" Nullable="false" />
+    <Property Name="IsStopIdleTvv" Type="int" Nullable="false" />
+    <Property Name="ProtocolId" Type="int" />
+    <Property Name="StateFormulaText" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Machine_DPIsConnParamInMachine">
+    <End Role="ParamInMachine" Type="Self.ParamInMachine" Multiplicity="0..1" />
+    <End Role="Machine" Type="Self.Machine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParamInMachine">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Machine">
+        <PropertyRef Name="DPIsConnParamInMachineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Machine_MachineParam">
+    <End Role="MachineParam" Type="Self.MachineParam" Multiplicity="0..1" />
+    <End Role="Machine" Type="Self.Machine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MachineParam">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Machine">
+        <PropertyRef Name="MachineParamForUPNoStandartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Machine_Parent">
+    <End Role="Machine" Type="Self.Machine" Multiplicity="0..1" />
+    <End Role="Machine1" Type="Self.Machine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Machine">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Machine1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Machine_SynhrParamInMachine">
+    <End Role="ParamInMachine" Type="Self.ParamInMachine" Multiplicity="0..1" />
+    <End Role="Machine" Type="Self.Machine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParamInMachine">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Machine">
+        <PropertyRef Name="SynhrParamInMachineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MachineParam_Parent">
+    <End Role="MachineParam" Type="Self.MachineParam" Multiplicity="0..1" />
+    <End Role="MachineParam1" Type="Self.MachineParam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MachineParam">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MachineParam1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperatingProgramExecutionLog_Machine">
+    <End Role="Machine" Type="Self.Machine" Multiplicity="1" />
+    <End Role="OperatingProgramExecutionLog" Type="Self.OperatingProgramExecutionLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Machine">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OperatingProgramExecutionLog">
+        <PropertyRef Name="MachineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParamInMachine_Machine">
+    <End Role="Machine" Type="Self.Machine" Multiplicity="1" />
+    <End Role="ParamInMachine" Type="Self.ParamInMachine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Machine">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ParamInMachine">
+        <PropertyRef Name="MachineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParamInMachine_MachineParam">
+    <End Role="MachineParam" Type="Self.MachineParam" Multiplicity="1" />
+    <End Role="ParamInMachine" Type="Self.ParamInMachine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MachineParam">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ParamInMachine">
+        <PropertyRef Name="MachineParamID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище IndustryDBModelContainer">
+    <EntitySet Name="Machine" EntityType="Self.Machine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MachineParam" EntityType="Self.MachineParam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OperatingProgramExecutionLog" EntityType="Self.OperatingProgramExecutionLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamInMachine" EntityType="Self.ParamInMachine" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Machine_DPIsConnParamInMachine" Association="Self.FK_Machine_DPIsConnParamInMachine">
+      <End Role="ParamInMachine" EntitySet="ParamInMachine" />
+      <End Role="Machine" EntitySet="Machine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Machine_MachineParam" Association="Self.FK_Machine_MachineParam">
+      <End Role="MachineParam" EntitySet="MachineParam" />
+      <End Role="Machine" EntitySet="Machine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Machine_Parent" Association="Self.FK_Machine_Parent">
+      <End Role="Machine" EntitySet="Machine" />
+      <End Role="Machine1" EntitySet="Machine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Machine_SynhrParamInMachine" Association="Self.FK_Machine_SynhrParamInMachine">
+      <End Role="ParamInMachine" EntitySet="ParamInMachine" />
+      <End Role="Machine" EntitySet="Machine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MachineParam_Parent" Association="Self.FK_MachineParam_Parent">
+      <End Role="MachineParam" EntitySet="MachineParam" />
+      <End Role="MachineParam1" EntitySet="MachineParam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperatingProgramExecutionLog_Machine" Association="Self.FK_OperatingProgramExecutionLog_Machine">
+      <End Role="Machine" EntitySet="Machine" />
+      <End Role="OperatingProgramExecutionLog" EntitySet="OperatingProgramExecutionLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParamInMachine_Machine" Association="Self.FK_ParamInMachine_Machine">
+      <End Role="Machine" EntitySet="Machine" />
+      <End Role="ParamInMachine" EntitySet="ParamInMachine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParamInMachine_MachineParam" Association="Self.FK_ParamInMachine_MachineParam">
+      <End Role="MachineParam" EntitySet="MachineParam" />
+      <End Role="ParamInMachine" EntitySet="ParamInMachine" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

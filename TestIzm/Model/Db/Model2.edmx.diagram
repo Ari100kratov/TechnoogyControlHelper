@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="009a501734d94b3098d61bbc25a7216a" Name="Diagram1" ZoomLevel="70">
+        <EntityTypeShape EntityType="IndustryDBModel.Machine" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IndustryDBModel.MachineParam" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IndustryDBModel.ParamInMachine" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="IndustryDBModel.FK_Machine_DPIsConnParamInMachine" ManuallyRouted="false" />
+        <AssociationConnector Association="IndustryDBModel.FK_Machine_MachineParam" ManuallyRouted="false" />
+        <AssociationConnector Association="IndustryDBModel.FK_Machine_Parent" ManuallyRouted="false" />
+        <AssociationConnector Association="IndustryDBModel.FK_Machine_SynhrParamInMachine" ManuallyRouted="false" />
+        <AssociationConnector Association="IndustryDBModel.FK_ParamInMachine_Machine" ManuallyRouted="false" />
+        <AssociationConnector Association="IndustryDBModel.FK_MachineParam_Parent" ManuallyRouted="false" />
+        <AssociationConnector Association="IndustryDBModel.FK_ParamInMachine_MachineParam" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="IndustryDBModel.OperatingProgramExecutionLog" Width="2.125" PointX="5.25" PointY="11.625" />
+        <AssociationConnector Association="IndustryDBModel.FK_OperatingProgramExecutionLog_Machine" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище IndustryDBModelContainer" CdmEntityContainer="IndustryDBEntities">
+    <EntitySetMapping Name="Machine">
+      <EntityTypeMapping TypeName="IndustryDBModel.Machine">
+        <MappingFragment StoreEntitySet="Machine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MachineParam">
+      <EntityTypeMapping TypeName="IndustryDBModel.MachineParam">
+        <MappingFragment StoreEntitySet="MachineParam">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MachineParamTypeID" ColumnName="MachineParamTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParamInMachine">
+      <EntityTypeMapping TypeName="IndustryDBModel.ParamInMachine">
+        <MappingFragment StoreEntitySet="ParamInMachine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+          <ScalarProperty Name="MachineParamID" ColumnName="MachineParamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

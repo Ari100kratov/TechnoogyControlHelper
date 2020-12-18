@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище IndustryDBModelContainer" CdmEntityContainer="IndustryDBEntities1">
+    <EntitySetMapping Name="Machine">
+      <EntityTypeMapping TypeName="IndustryDBModel.Machine">
+        <MappingFragment StoreEntitySet="Machine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinDate" ColumnName="FinDate" />
+          <ScalarProperty Name="PluginID" ColumnName="PluginID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="MachineStateID" ColumnName="MachineStateID" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="MachineNum" ColumnName="MachineNum" />
+          <ScalarProperty Name="MachinePurposeID" ColumnName="MachinePurposeID" />
+          <ScalarProperty Name="MachineTypeID" ColumnName="MachineTypeID" />
+          <ScalarProperty Name="DetailTypeID" ColumnName="DetailTypeID" />
+          <ScalarProperty Name="IsBlockedMachine" ColumnName="IsBlockedMachine" />
+          <ScalarProperty Name="MachineModelId" ColumnName="MachineModelId" />
+          <ScalarProperty Name="MoneyLoose" ColumnName="MoneyLoose" />
+          <ScalarProperty Name="ProgramFolder" ColumnName="ProgramFolder" />
+          <ScalarProperty Name="IsHide" ColumnName="IsHide" />
+          <ScalarProperty Name="IntegrationID" ColumnName="IntegrationID" />
+          <ScalarProperty Name="IntegrationDeptID" ColumnName="IntegrationDeptID" />
+          <ScalarProperty Name="OEEPlan" ColumnName="OEEPlan" />
+          <ScalarProperty Name="CNCNetworkFolder" ColumnName="CNCNetworkFolder" />
+          <ScalarProperty Name="UseKoeff" ColumnName="UseKoeff" />
+          <ScalarProperty Name="UseKoeffAviaSmol" ColumnName="UseKoeffAviaSmol" />
+          <ScalarProperty Name="IsDiagFaulted" ColumnName="IsDiagFaulted" />
+          <ScalarProperty Name="IsUseBaltsystemCNC" ColumnName="IsUseBaltsystemCNC" />
+          <ScalarProperty Name="IsSearchProgramByServer" ColumnName="IsSearchProgramByServer" />
+          <ScalarProperty Name="IsAllowSetIdleMPDevice" ColumnName="IsAllowSetIdleMPDevice" />
+          <ScalarProperty Name="IsAllowSetMiniOpMPDevice" ColumnName="IsAllowSetMiniOpMPDevice" />
+          <ScalarProperty Name="SettingOeeID" ColumnName="SettingOeeID" />
+          <ScalarProperty Name="CurrentIntegrationProgramId" ColumnName="CurrentIntegrationProgramId" />
+          <ScalarProperty Name="IntegrationOperationId" ColumnName="IntegrationOperationId" />
+          <ScalarProperty Name="kEquipmentId" ColumnName="kEquipmentId" />
+          <ScalarProperty Name="IsAutoControlPPR" ColumnName="IsAutoControlPPR" />
+          <ScalarProperty Name="NetworkWorkTypeId" ColumnName="NetworkWorkTypeId" />
+          <ScalarProperty Name="FTPLogin" ColumnName="FTPLogin" />
+          <ScalarProperty Name="FTPPassword" ColumnName="FTPPassword" />
+          <ScalarProperty Name="IsDeleteFileByFtp" ColumnName="IsDeleteFileByFtp" />
+          <ScalarProperty Name="IsSavePerformedUPToDisk" ColumnName="IsSavePerformedUPToDisk" />
+          <ScalarProperty Name="IsLoadingNotLinkedFolderUP" ColumnName="IsLoadingNotLinkedFolderUP" />
+          <ScalarProperty Name="IsNotInAnalitic" ColumnName="IsNotInAnalitic" />
+          <ScalarProperty Name="IsInRealTimeOnClient" ColumnName="IsInRealTimeOnClient" />
+          <ScalarProperty Name="MachineNominalPower" ColumnName="MachineNominalPower" />
+          <ScalarProperty Name="ProtocolWorkingWithUpTypeId" ColumnName="ProtocolWorkingWithUpTypeId" />
+          <ScalarProperty Name="IsAllowDownloadUpToMachineMemory" ColumnName="IsAllowDownloadUpToMachineMemory" />
+          <ScalarProperty Name="IsGettingUpFromLocalResource" ColumnName="IsGettingUpFromLocalResource" />
+          <ScalarProperty Name="UpLocalResourceTypeId" ColumnName="UpLocalResourceTypeId" />
+          <ScalarProperty Name="UpLocalResourcePath" ColumnName="UpLocalResourcePath" />
+          <ScalarProperty Name="UpLocalResourceLogin" ColumnName="UpLocalResourceLogin" />
+          <ScalarProperty Name="UpLocalResourcePassword" ColumnName="UpLocalResourcePassword" />
+          <ScalarProperty Name="ViDiagDeviceId" ColumnName="ViDiagDeviceId" />
+          <ScalarProperty Name="RegisterDataProtocolId" ColumnName="RegisterDataProtocolId" />
+          <ScalarProperty Name="UpProtocolId" ColumnName="UpProtocolId" />
+          <ScalarProperty Name="MonitoringPointTypeId" ColumnName="MonitoringPointTypeId" />
+          <ScalarProperty Name="IsTriggerIgnore" ColumnName="IsTriggerIgnore" />
+          <ScalarProperty Name="IsNeedTransferMultiplyFilesUp" ColumnName="IsNeedTransferMultiplyFilesUp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MachineParam">
+      <EntityTypeMapping TypeName="IndustryDBModel.MachineParam">
+        <MappingFragment StoreEntitySet="MachineParam">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MachineParamTypeID" ColumnName="MachineParamTypeID" />
+          <ScalarProperty Name="DefaultLinkContext" ColumnName="DefaultLinkContext" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DefaultColor" ColumnName="DefaultColor" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="MeasureUnit" ColumnName="MeasureUnit" />
+          <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+          <ScalarProperty Name="IsByShedule" ColumnName="IsByShedule" />
+          <ScalarProperty Name="IsServiceState" ColumnName="IsServiceState" />
+          <ScalarProperty Name="IsTakeOffAtStartProgram" ColumnName="IsTakeOffAtStartProgram" />
+          <ScalarProperty Name="AdditionalTypeId" ColumnName="AdditionalTypeId" />
+          <ScalarProperty Name="IsDragWhenNoConnect" ColumnName="IsDragWhenNoConnect" />
+          <ScalarProperty Name="IsCounter" ColumnName="IsCounter" />
+          <ScalarProperty Name="IsResetAfterShiftChange" ColumnName="IsResetAfterShiftChange" />
+          <ScalarProperty Name="IntegrationId" ColumnName="IntegrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParamInMachine">
+      <EntityTypeMapping TypeName="IndustryDBModel.ParamInMachine">
+        <MappingFragment StoreEntitySet="ParamInMachine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LinkContext" ColumnName="LinkContext" />
+          <ScalarProperty Name="LastValueID" ColumnName="LastValueID" />
+          <ScalarProperty Name="ServiceCode" ColumnName="ServiceCode" />
+          <ScalarProperty Name="FormulaText" ColumnName="FormulaText" />
+          <ScalarProperty Name="CalcFormula" ColumnName="CalcFormula" />
+          <ScalarProperty Name="CalcKoeff" ColumnName="CalcKoeff" />
+          <ScalarProperty Name="StartTimeOut" ColumnName="StartTimeOut" />
+          <ScalarProperty Name="EndTimeOut" ColumnName="EndTimeOut" />
+          <ScalarProperty Name="CalcDelta" ColumnName="CalcDelta" />
+          <ScalarProperty Name="CalcTypeID" ColumnName="CalcTypeID" />
+          <ScalarProperty Name="IsCalcDetail" ColumnName="IsCalcDetail" />
+          <ScalarProperty Name="kProtocolTypeID" ColumnName="kProtocolTypeID" />
+          <ScalarProperty Name="DelayTime" ColumnName="DelayTime" />
+          <ScalarProperty Name="IsDetailMadeItogCounter" ColumnName="IsDetailMadeItogCounter" />
+          <ScalarProperty Name="IsInputByHand" ColumnName="IsInputByHand" />
+          <ScalarProperty Name="IsPersecondMonitoring" ColumnName="IsPersecondMonitoring" />
+          <ScalarProperty Name="IsForTransfer" ColumnName="IsForTransfer" />
+          <ScalarProperty Name="MachineProtocolID" ColumnName="MachineProtocolID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsSendOutputSignal" ColumnName="IsSendOutputSignal" />
+          <ScalarProperty Name="IsStopIdleTvv" ColumnName="IsStopIdleTvv" />
+          <ScalarProperty Name="ProtocolId" ColumnName="ProtocolId" />
+          <ScalarProperty Name="StateFormulaText" ColumnName="StateFormulaText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_Machine_DPIsConnParamInMachine" TypeName="IndustryDBModel.FK_Machine_DPIsConnParamInMachine" StoreEntitySet="Machine">
+      <EndProperty Name="ParamInMachine">
+        <ScalarProperty Name="ID" ColumnName="DPIsConnParamInMachineId" />
+      </EndProperty>
+      <EndProperty Name="Machine">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="DPIsConnParamInMachineId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Machine_MachineParam" TypeName="IndustryDBModel.FK_Machine_MachineParam" StoreEntitySet="Machine">
+      <EndProperty Name="MachineParam">
+        <ScalarProperty Name="ID" ColumnName="MachineParamForUPNoStandartId" />
+      </EndProperty>
+      <EndProperty Name="Machine">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="MachineParamForUPNoStandartId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Machine_Parent" TypeName="IndustryDBModel.FK_Machine_Parent" StoreEntitySet="Machine">
+      <EndProperty Name="Machine">
+        <ScalarProperty Name="ID" ColumnName="ParentId" />
+      </EndProperty>
+      <EndProperty Name="Machine1">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="ParentId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Machine_SynhrParamInMachine" TypeName="IndustryDBModel.FK_Machine_SynhrParamInMachine" StoreEntitySet="Machine">
+      <EndProperty Name="ParamInMachine">
+        <ScalarProperty Name="ID" ColumnName="SynhrParamInMachineId" />
+      </EndProperty>
+      <EndProperty Name="Machine">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="SynhrParamInMachineId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ParamInMachine_Machine" TypeName="IndustryDBModel.FK_ParamInMachine_Machine" StoreEntitySet="ParamInMachine">
+      <EndProperty Name="Machine">
+        <ScalarProperty Name="ID" ColumnName="MachineID" />
+      </EndProperty>
+      <EndProperty Name="ParamInMachine">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_MachineParam_Parent" TypeName="IndustryDBModel.FK_MachineParam_Parent" StoreEntitySet="MachineParam">
+      <EndProperty Name="MachineParam">
+        <ScalarProperty Name="ID" ColumnName="ParentID" />
+      </EndProperty>
+      <EndProperty Name="MachineParam1">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="ParentID" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ParamInMachine_MachineParam" TypeName="IndustryDBModel.FK_ParamInMachine_MachineParam" StoreEntitySet="ParamInMachine">
+      <EndProperty Name="MachineParam">
+        <ScalarProperty Name="ID" ColumnName="MachineParamID" />
+      </EndProperty>
+      <EndProperty Name="ParamInMachine">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="OperatingProgramExecutionLog">
+      <EntityTypeMapping TypeName="IndustryDBModel.OperatingProgramExecutionLog">
+        <MappingFragment StoreEntitySet="OperatingProgramExecutionLog">
+          <ScalarProperty Name="ExecutionUpStatusTypeId" ColumnName="ExecutionUpStatusTypeId" />
+          <ScalarProperty Name="AvgPercentCorrectSpeed" ColumnName="AvgPercentCorrectSpeed" />
+          <ScalarProperty Name="AvgPercentCorrectFeed" ColumnName="AvgPercentCorrectFeed" />
+          <ScalarProperty Name="StopTime" ColumnName="StopTime" />
+          <ScalarProperty Name="MstFucnTime" ColumnName="MstFucnTime" />
+          <ScalarProperty Name="HighSpeedTime" ColumnName="HighSpeedTime" />
+          <ScalarProperty Name="ProcessingTime" ColumnName="ProcessingTime" />
+          <ScalarProperty Name="DtEnd" ColumnName="DtEnd" />
+          <ScalarProperty Name="DtStart" ColumnName="DtStart" />
+          <ScalarProperty Name="NameUP" ColumnName="NameUP" />
+          <ScalarProperty Name="MonitoringValueId" ColumnName="MonitoringValueId" />
+          <ScalarProperty Name="FileUpId" ColumnName="FileUpId" />
+          <ScalarProperty Name="WorkerId" ColumnName="WorkerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_OperatingProgramExecutionLog_Machine" TypeName="IndustryDBModel.FK_OperatingProgramExecutionLog_Machine" StoreEntitySet="OperatingProgramExecutionLog">
+      <EndProperty Name="OperatingProgramExecutionLog">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="Machine">
+        <ScalarProperty Name="ID" ColumnName="MachineId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
